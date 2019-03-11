@@ -1,1 +1,1 @@
-body{background-color:#2e2e2f}
+body{max-height:100vh}.home{padding-top:48px}.navbar-icon{display:inline-block;vertical-align:middle}.menu-planet{border-radius:50%;width:2rem;height:2rem;background:#ff4500}.menu-ring,.menu-ring-close,.menu-rings{width:2.5rem;height:.4rem;border-radius:.2rem;background:orange}.menu-ring{-webkit-transform:rotate(45deg);transform:rotate(45deg);margin-left:-2.5rem}.menu-ring-close{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);margin-left:-2.75rem}

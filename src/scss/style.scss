@@ -1,4 +1,35 @@
-$bg: #2e2e2f;
 body{
-    background-color: $bg;
+    max-height: 100vh;
+}
+.home{
+    padding-top: 48px;
+}
+.navbar-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu-planet{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background: orangered;
+}
+.menu-rings{
+    width: 2.5rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    background: orange;
+}
+.menu-ring{
+    @extend .menu-rings;
+    transform: rotate(45deg);
+    margin-left: -2.5rem;
+}
+.menu-ring-close{
+    @extend .menu-rings;
+    transform: rotate(-45deg);
+    margin-left: -2.75rem;
+}
+.bg-all{
+
 }
