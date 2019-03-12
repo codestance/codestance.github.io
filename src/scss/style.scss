@@ -1,8 +1,8 @@
-body{
-    max-height: 100vh;
+h1,h2{
+    color: bisque;
 }
-.home{
-    padding-top: 48px;
+p{
+    color: darkgray;
 }
 .navbar-icon{
     display: inline-block;
@@ -30,6 +30,13 @@ body{
     transform: rotate(-45deg);
     margin-left: -2.75rem;
 }
-.bg-all{
-
+.wrapper{
+    @extend .part;
+    right: 0;
+    max-width: 50px;
+    z-index: 1030;
+}
+.part{
+    padding-top:48px;
+    height: 100vh;
 }
