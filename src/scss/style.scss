@@ -25,11 +25,17 @@ p{
     transform: rotate(45deg);
     margin-left: -2.5rem;
 }
-.menu-ring-close{
+.menu-ring-open{
     @extend .menu-rings;
     transform: rotate(-45deg);
     margin-left: -2.75rem;
+    width: 0;
+    transition: width .25s ease-in-out;
 }
+.open{
+    width: 2.5rem;
+}
+
 .wrapper{
     @extend .part;
     right: 0;
