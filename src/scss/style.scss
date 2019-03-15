@@ -38,11 +38,15 @@ p{
 
 .wrapper{
     @extend .part;
+    padding-bottom: 48px;
     right: 0;
-    max-width: 50px;
+    width: 50px;
     z-index: 1030;
 }
 .part{
     padding-top:48px;
     height: 100vh;
+}
+.astronaut-box{
+    bottom: 48px;
 }
