@@ -18,6 +18,7 @@ gulp.task('serve',gulp.parallel('style',function(){
     });
     gulp.watch('src/scss/*.scss', gulp.parallel('style'));
     gulp.watch('src/*.html').on('change', browserSync.reload);
+    gulp.watch('src/js/.js').on('change', browserSync.reload);
 }));
 
 gulp.task('default', gulp.parallel('serve'));

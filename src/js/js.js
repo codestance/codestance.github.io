@@ -1,5 +1,3 @@
-const h = window.innerHeight;
-const w = window.innerWidth;
 $(document).ready(function(){
     $('.menu-button').on('click', function(){
         $(':nth-child(3)',this).toggleClass('open');
@@ -8,53 +6,66 @@ $(document).ready(function(){
         $('.navbar-collapse').collapse('hide');
         $('.menu-button').children(2).removeClass('open');
     })
-    $(window).on('scroll',getPotencial);
     createCanvas();
+    setInterval(shine,1000);
+    $(window).on('scroll',getPotencial);
+    $(window).on('resize', getPotencial);
+    $(window).on('resize', createCanvas);
 })
 
 function getPotencial(){
-    let step = window.pageYOffset*0.3<h-100 ? window.pageYOffset*0.3: h-100;    
+    let h=window.innerHeight;
+    let step = window.pageYOffset*0.3<h-100 ? window.pageYOffset*0.3: h-100; 
+    if(step==h-100) $('.astronaut-text').removeClass('d-none');   
     return $('.astronaut-box').css('transform','translateY(-'+ step + 'px)');
 }
 
-// function generateStars(){
-//     let settings={
-//         color: '#fff',
-//         amounth: 100,
-//         minSize: 3,
-//         maxSize: 7,
-//         alpha: Math.round()
-//     };
-// }
-
 const canvas = $('<canvas></canvas>').addClass('canvas-stars');
+canvas.appendTo('.home');
 const ctx = canvas[0].getContext("2d");
 function createCanvas(){
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-    canvas.appendTo('.home');
     canvas[0].height=canvas[0].clientHeight;
     canvas[0].width=canvas[0].clientWidth;
-    for(let i=0; i<100; i++){
-        new Circle();       
+    for(let i=0; i<120; i++){
+        new Circle()       
     }
 }
-
 function getBackgroundColor() {
-    return "rgb("+[
+    return 'rgb('+[
         Math.round(Math.random()*0xFF),
         Math.round(Math.random()*0xFF),
         Math.round(Math.random()*0xFF)
-    ].join()+")";
+    ].join()+')';
 }
-
+const stars=[];
+function shine(){
+    for(let i=0; i<3;i++){
+        let star = stars[~~(Math.random()*stars.length)];
+        ctx.beginPath();
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.arc(star[0], star[1], star[2], 0, 2 * Math.PI);
+        ctx.fill();
+        setTimeout(function(){
+            ctx.beginPath();
+            ctx.globalCompositeOperation = 'source-over';
+            ctx.fillStyle=star[3];
+            ctx.arc(star[0], star[1], star[2], 0, 2 * Math.PI);
+            ctx.fill();
+        },500)
+    }
+}
 const Circle = function(){
-    ctx.beginPath();
-    ctx.fillStyle=getBackgroundColor();
-    let rad = Math.floor(Math.random()*3)+2;
+    let h = window.innerHeight;
+    let w = window.innerWidth;
+    let rad = Math.floor(Math.random()*3)+3;
     let x=Math.random()*(w-rad*2)+rad;
     let y=Math.random()*(h-rad*2)+rad;
-    // console.log(x,y,rad)
+    let colorC = getBackgroundColor();
+    ctx.beginPath();
+    ctx.fillStyle=colorC;
+    ctx.globalAlpha = 0.9;
+    stars.push([x,y,rad,colorC])
     ctx.arc(x, y, rad, 0, 2 * Math.PI);
-    // debugger
     ctx.fill();
 }
