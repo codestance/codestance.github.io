@@ -33,19 +33,50 @@
       <p class="d-none astronaut-text text-uppercase text-center">I have potential!</p>
     </div>
     <section class="container-fluid d-flex justify-content-center align-items-center part home" id="menu-home">
-      <h1>Welcome to my world</h1>      
+      <!-- <h1 class="display-2">Welcome to my world</h1> -->
+      <svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+    <path d="M100,200a100,100 0 1,0 200,0a100,100 0 1,0 -200,0" id="textcircle">
+        <animateTransform
+        attributeName="transform"
+        begin="0s"
+        dur="50s"
+        type="rotate"
+        from="360 200 200"
+        to="0 200 200"
+        repeatCount="indefinite" 
+        />
+    </path>
+    <style>
+        text { 
+            font-size: 45px;
+            font-family: Franklin Gothic, sans-serif;
+            font-weight: 900; 
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            z-index: 100;
+            fill: white;
+        }
+    </style>
+    
+</defs> 
+    <text dy="70" textLength="1200">
+        <textPath xlink:href="#textcircle">
+            Welcome to my world
+        </textPath>
+    </text>
+</svg>      
     </section>
-    <section class="container-fluid part" id="menu-web">
-      <h2>Web Developer</h2>
-      <p> I feel comfortable with <br>HTML5 CSS3 SCSS Bootstrap RWD Animations JS JQuery Linux Windows</p>
+    <section class="container-fluid part" id="menu-web">      
+      <!-- <p> I feel comfortable with <br>HTML5 CSS3 SCSS Bootstrap RWD Animations JS JQuery Linux Windows</p>
       <p>I'm still learning <br>Github APIs React Gulp Webpack</p>
-      <div class="rounded-circle"></div>
-      <div class="rounded-circle"></div>
-      <div class="rounded-circle"></div>
+      <p>See my projects <a href="github.com/marrow00">here</a>!</p> -->
     </section>
     <section class="container-fluid part" id="menu-art">
       <h2>Artist</h2>
-      <p>Gimp AdobeXD Corel Draw Paint Creativity</p>
+      <!-- <p>Gimp AdobeXD Corel Draw Paint Creativity</p> -->
+      
       <div class="art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/panda2a.png"></div>
       <div class="art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/p1.png"></div>
       <div class="art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/p2.png"></div>
@@ -59,6 +90,8 @@
     <section class="container-fluid part" id="menu-extras">
       <h2>If you are not conviced yet, here are some Extras</h2>
       <p>Python German Spanish Cooking Humor</p>
+      <p>Send me a message</p>
+      <p>contact form</p>
     </section>
     <footer>
       <p>2019 mail github</p>

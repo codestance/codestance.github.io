@@ -41,23 +41,36 @@ p{
 }
 .wrapper{
     @extend .part;
-    padding-bottom: 48px;
+    // padding-bottom: 48px;
+    padding-bottom: 1rem;
     right: 0;
-    width: 50px;
+    // width: 50px;
+    width: 3.2rem;
     z-index: 1030;
+    @media screen and (min-width:768px){
+        width: 4.4rem;
+    }
+    @media screen and (min-width:1200px){
+        width: 6.3rem;
+    }
 }
 .part{
-    padding-top:48px;
+    padding-top:3rem;
     height: 100vh;
+    @media screen and (min-width:768px){
+        padding-top: 4.4rem;
+    }
+    @media screen and (min-width:1200px){
+        padding-top: 6.3rem;
+    }
 }
 .astronaut-box{
-    bottom: 48px;
+    bottom: 1rem;
 }
 .astronaut-text{
-    font-size:70%;
     position: absolute;
-    top: 10px;
-    right: 40px;
+    top: 1rem;
+    right: 2.5rem;
 }
 .home{
     position: relative;
