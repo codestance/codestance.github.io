@@ -1,27 +1,27 @@
 $(document).ready(function(){
-    $('.menu-button').on('click', function(){
-        $(':nth-child(3)',this).toggleClass('open');
-    });
-    $('.nav-link').on('click',function(){
-        $('.navbar-collapse').collapse('hide');
-        $('.menu-button').children(2).removeClass('open');
-    });
+    // $('.menu-button').on('click', function(){
+    //     $(':nth-child(3)',this).toggleClass('open');
+    // });
+    // $('.nav-link').on('click',function(){
+    //     $('.navbar-collapse').collapse('hide');
+    //     $('.menu-button').children(2).removeClass('open');
+    // });
     createCanvas();
     setInterval(shine,1000);
-    $(window).on('scroll',getPotencial);
-    $(window).on('resize', getPotencial);
+    // $(window).on('scroll',getPotencial);
+    // $(window).on('resize', getPotencial);
     $(window).on('resize', createCanvas);
 });
 
-function getPotencial(){
-    let h = $('.wrapper').height();
-    let step = $(window).scrollTop()*0.3<h ? $(window).scrollTop()*0.3 : h; 
-    if(step==h) $('.astronaut-text').removeClass('d-none');   
-    return $('.astronaut-box').css('transform','translateY(-'+ step + 'px)');
-}
+// function getPotencial(){
+//     let h = $('.wrapper').height();
+//     let step = $(window).scrollTop()*0.3<h ? $(window).scrollTop()*0.3 : h; 
+//     if(step==h) $('.astronaut-text').removeClass('d-none');   
+//     return $('.astronaut-box').css('transform','translateY(-'+ step + 'px)');
+// }
 
 const canvas = $('<canvas></canvas>').addClass('canvas-stars');
-$('.home').append(canvas);
+$('#home').append(canvas);
 const ctx = canvas[0].getContext("2d");
 function createCanvas(){
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);

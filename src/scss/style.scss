@@ -1,77 +1,38 @@
-html,body{
-    scroll-behavior: smooth;
-}
-h1,h2{
-    color: bisque;
-    z-index: 1010;
-}
-p{
-    color: darkgray;
-}
-.navbar-icon{
-    display: inline-block;
-    vertical-align: middle;
-}
-.menu-planet{
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    background: orangered;
-}
-.menu-rings{
-    width: 2.5rem;
-    height: 0.4rem;
-    border-radius: 0.2rem;
-    background: orange;
-}
-.menu-ring{
-    @extend .menu-rings;
-    transform: rotate(45deg);
-    margin-left: -2.5rem;
-}
-.menu-ring-open{
-    @extend .menu-rings;
-    transform: rotate(-45deg);
-    margin-left: -2.75rem;
-    width: 0;
-    transition: width .25s ease-in-out;
-}
-.open{
-    width: 2.5rem;
-}
-.wrapper{
-    @extend .part;
-    // padding-bottom: 48px;
-    padding-bottom: 1rem;
-    right: 0;
-    // width: 50px;
-    width: 3.2rem;
-    z-index: 1030;
-    @media screen and (min-width:768px){
-        width: 4.4rem;
-    }
-    @media screen and (min-width:1200px){
-        width: 6.3rem;
+$small: 500px;
+// h1,h2{
+//     color: bisque;
+//     z-index: 1010;
+// }
+// p{
+//     color: darkgray;
+// }
+// .wrapper{
+//     // @extend .part;
+//     // padding-bottom: 48px;
+//     padding-bottom: 1rem;
+//     right: 0;
+//     // width: 50px;
+//     width: 3.2rem;
+//     z-index: 1030;
+//     height: 100vh;
+// }
+section, .slide{
+    padding: 0;
+    @media screen and (min-width:$small){
+        padding: 2rem;
     }
 }
-.part{
-    padding-top:3rem;
-    height: 100vh;
-    @media screen and (min-width:768px){
-        padding-top: 4.4rem;
-    }
-    @media screen and (min-width:1200px){
-        padding-top: 6.3rem;
-    }
+.wrap{
+    padding-top:5rem;
 }
-.astronaut-box{
-    bottom: 1rem;
-}
-.astronaut-text{
-    position: absolute;
-    top: 1rem;
-    right: 2.5rem;
-}
+// .astronaut-box{
+//     bottom: 1rem;
+// }
+// .astronaut-text{
+//     position: absolute;
+//     top: 1rem;
+//     right: 2.5rem;
+// }
 .home{
     position: relative;
 }
@@ -79,10 +40,49 @@ p{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 100;
 }
 
-.art-container{
-    width: 10rem;
-    height: 10rem;
+.slide-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    overflow-x: hidden;
+  }
+  .title{
+    transform: translate3d(3rem,0,0);
+    margin: 0;
+    white-space:nowrap;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+  }
+  .title-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+  }
+  .title-elemtent {
+    padding: 0 3rem;
+    position: relative;
+    // margin: 0 50px;
+    will-change:transform;
+    animation: zium 20s infinite linear
+  }
+  @keyframes zium {
+    0% {
+      transform:translateX(0);
+    }
+    100% {
+      transform:translateX(-100%);
+    }  
+  }
+
+.slide-subtitle{
+    position:absolute;
+    top:0;
+}
+.slide-title_extras{
+    top: 2rem;
 }
