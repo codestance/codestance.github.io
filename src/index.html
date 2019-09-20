@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/webslides.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <title>The world of K</title>
   </head>
   <body id="webslides" class="vertical">
@@ -16,7 +17,8 @@
       <div class="astronaut-box position-absolute px-2"><img src="img/astronaut.svg" class="img-fluid"></div>
       <p class="d-none astronaut-text text-uppercase text-center">I have potential!</p>
     </div> -->
-    <section class="bg-black-blue" id="home">
+    <section class="bg-black-blue">
+      <div class="home" style="width: 100vw; height: 100vh; position:absolute; top:0;left:0;z-index:1000"></div>
       <svg  class="content-center zoomIn slow" xmlns="http://www.w3.org/2000/svg" 
       xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" width="400" height="400">
         <defs>
@@ -31,37 +33,27 @@
           repeatCount="indefinite" 
           />
           </path>
-          <style>
-          text { 
-          font-size: 45px;
-          font-family: Franklin Gothic, sans-serif;
-          font-weight: 900; 
-          text-transform: uppercase;
-          letter-spacing: 5px;
-          z-index: 100;
-          }
-          </style>
         </defs> 
         <text dy="70" textLength="1200">
-          <textPath xlink:href="#textcircle">Welcome to my world</textPath>
+          <textPath xlink:href="#textcircle" id="title">Welcome to my world</textPath>
         </text>
       </svg>      
     </section>
-    <section class="slide-top bg-black-blue" id="web">
+    <section class="slide-top bg-black-blue">
       <div class="slide-title">
         <h2 class="title">
           <div class="title-container">
             <div class="title-elemtent">
-              web developer
+              <strong>web developer</strong>
             </div>
             <div class="title-elemtent">
-              web developer
+              <strong>web developer</strong>
             </div>
             <div class="title-elemtent">
-              web developer
+              <strong>web developer</strong>
             </div>
             <div class="title-elemtent">
-              web developer
+              <strong>web developer</strong>
             </div>
           </div>
         </h2>
@@ -69,36 +61,35 @@
       <div class="wrap">
         <!-- <h2 class="text-landing text-shadow">Web Developer</h2> -->
         <p class="text-context"> I feel comfortable with: HTML5 CSS3 SCSS Bootstrap RWD Animations JS JQuery SQL Linux Windows</p>
+            <i class="fab fa-3x fa-html5"></i>
+            <i class="fab fa-3x fa-css3-alt"></i>
+            <i class="fab fa-3x fa-sass"></i>
+            <i class="fab fa-3x fa-bootstrap"></i>
+            <i class="fab fa-3x fa-js-square"></i>
+            <i class="fas fa-3x fa-database"></i>
+            <i class="fab fa-3x fa-windows"></i>
+            <i class="fab fa-3x fa-ubuntu"></i>
         <ul class="flexblock gallery">
           <li><figure><a href="#1"><img src="img/android.png" alt="1"></a><figcaption><a href="#s1">Source code</a></figcaption></figure></li>
           <li><figure><a href="#2"><img src="img/android.png" alt="2"></a><figcaption><a href="#s2">Source code</a></figcaption></figure></li>
           <li><figure><a href="#3"><img src="img/android.png" alt="3"></a><figcaption><a href="#s3">Source code</a></figcaption></figure></li>
         </ul>
       <p class="text-context">I'm still learning: Github APIs React Gulp Webpack</p>
+          <i class="fab fa-3x fa-github"></i>
+          <i class="fab fa-3x fa-react"></i>
+          <i class="fab fa-3x fa-gulp"></i>
       </div>
     </section>
-    <section class="slide-top bg-black-blue" id="art">
+    <section class="slide-top bg-black-blue">
       <div class="slide-title">
           <h2 class="title">
             <div class="title-container">
-              <div class="title-elemtent">
-                artist
-              </div>
-              <div class="title-elemtent">
-                artist
-              </div>
-              <div class="title-elemtent">
-                artist
-              </div>
-              <div class="title-elemtent">
-                artist
-              </div>
-              <div class="title-elemtent">
-                artist
-              </div>
-              <div class="title-elemtent">
-                artist
-              </div>
+              <div class="title-elemtent"><strong>artist</strong></div>
+              <div class="title-elemtent"><strong>artist</strong></div>
+              <div class="title-elemtent"><strong>artist</strong></div>
+              <div class="title-elemtent"><strong>artist</strong></div>
+              <div class="title-elemtent"><strong>artist</strong></div>
+              <div class="title-elemtent"><strong>artist</strong></div>
             </div>
           </h2>
         </div>
@@ -110,53 +101,49 @@
       <div class="art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/p2.png"></div>
       <div class="art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/k2.svg"></div> -->
     </section>
-    <section class="slide-top bg-black-blue" id="physics">
+    <section class="slide-top bg-black-blue">
       <div class="slide-title">
           <h2 class="title">
             <div class="title-container">
-              <div class="title-elemtent">physicist</div>
-              <div class="title-elemtent">physicist</div>
-              <div class="title-elemtent">physicist</div>
-              <div class="title-elemtent">physicist</div>
-              <div class="title-elemtent">physicist</div>
+              <div class="title-elemtent"><strong>physicist</strong></div>
+              <div class="title-elemtent"><strong>physicist</strong></div>
+              <div class="title-elemtent"><strong>physicist</strong></div>
+              <div class="title-elemtent"><strong>physicist</strong></div>
+              <div class="title-elemtent"><strong>physicist</strong></div>
           </div>
         </h2>
       </div>
       <div class="wrap">
-        <!-- <h2 class="text-landing text-shadow">Physicist</h2> -->
+        <div class="grid">
+          <div class="column"><p>V = -G Mm/r1 - GMm/r2</p></div>
+          <div class="column">
+            <i class="fas fa-5x fa-brain"></i>
+            <i class="fas fa-5x fa-atom"></i>
+            <i class="fas fa-5x fa-chart-area"></i>
+          </div>
+        </div>
         <p>Logical thinking(and actually acting) Analyzing Infering Curiosity</p>
-        <p>V = -G Mm/r1 - GMm/r2</p>
       </div>
     </section>
-    <section class="slide-top bg-black-blue" id="extras">
+    <section class="slide-top bg-black-blue">
       <p class="text-subtitle slide-subtitle">If you are not conviced yet, here are some</p>
       <div class="slide-title slide-title_extras">
           <h2 class="title text-shadow">
             <div class="title-container">
-              <div class="title-elemtent">
-                extras
-              </div>
-              <div class="title-elemtent">
-                extras
-              </div>
-              <div class="title-elemtent">
-                extras
-              </div>
-              <div class="title-elemtent">
-                extras
-              </div>
-              <div class="title-elemtent">
-                extras
-              </div>
-              <div class="title-elemtent">
-                extras
-              </div>
+              <div class="title-elemtent"><strong>extras</strong></div>
+              <div class="title-elemtent"><strong>extras</strong></div>
+              <div class="title-elemtent"><strong>extras</strong></div>
+              <div class="title-elemtent"><strong>extras</strong></div>
+              <div class="title-elemtent"><strong>extras</strong></div>
+              <div class="title-elemtent"><strong>extras</strong></div>
            </div>
          </h2>
       </div>
       <div class="wrap">
         <div class="grid aligncenter">
           <div class="column">
+              <i class="fab fa-5x fa-python"></i>
+              <i class="far fa-5x fa-smile-beam"></i>
               <p>Python German Spanish Cooking Humor</p>
           </div>
           <div class="column">

@@ -21,7 +21,7 @@ $(document).ready(function(){
 // }
 
 const canvas = $('<canvas></canvas>').addClass('canvas-stars');
-$('#home').append(canvas);
+$('.home').append(canvas);
 const ctx = canvas[0].getContext("2d");
 function createCanvas(){
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
@@ -65,7 +65,7 @@ const Circle = function(){
     ctx.beginPath();
     ctx.fillStyle=colorC;
     ctx.globalAlpha = 0.9;
-    stars.push([x,y,rad,colorC])
+    stars.push([x,y,rad,colorC]);
     ctx.arc(x, y, rad, 0, 2 * Math.PI);
     ctx.fill();
 };
