@@ -1,69 +1,47 @@
 $small: 500px;
-// h1,h2{
-//     color: bisque;
-//     z-index: 1010;
-// }
-// p{
-//     color: darkgray;
-// }
-// .wrapper{
-//     // @extend .part;
-//     // padding-bottom: 48px;
-//     padding-bottom: 1rem;
-//     right: 0;
-//     // width: 50px;
-//     width: 3.2rem;
-//     z-index: 1030;
-//     height: 100vh;
-// }
+html{
+  overflow-x: hidden;
+}
+body{
+  background-color: rgb(13, 23, 50);
+}
+section{
+  position: relative;
+  padding: 0;
+  @media screen and (min-width:$small){
+    padding: 2rem;
+  }
+}
 p{
   margin:0;
+  color: white;
 }
-section, .slide{
-    padding: 0;
-    @media screen and (min-width:$small){
-        padding: 2rem;
-    }
-}
+
 .wrap{
     padding-top:5rem;
 }
-// .astronaut-box{
-//     bottom: 1rem;
-// }
-// .astronaut-text{
-//     position: absolute;
-//     top: 1rem;
-//     right: 2.5rem;
-// }
-// text { 
-//   font-size: 45px;
-//   font-family: Franklin Gothic, sans-serif;
-//   font-weight: 900; 
-//   text-transform: uppercase;
-//   letter-spacing: 5px;
-//   z-index: 100;
-//   }
-#section1{
-    position: relative;
+
+.home{
+  width: 100vw; height: 100vh; top:0;left:0;
 }
+
 #title{
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-family: Franklin Gothic, sans-serif;
   font-weight: 900; 
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   text-shadow: 0 0 1rem rgba(255,255,255,.5);
-  z-index: 100;
+  z-index: 1000;
 }
 .canvas-stars{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 100;
 }
 
-.slide-title{
+.section-title{
     position: absolute;
     top: 0;
     left: 0;
@@ -86,7 +64,7 @@ section, .slide{
   .title-elemtent {
     padding: 0 3rem;
     position: relative;
-    // margin: 0 50px;
+    color: #E83A35;
     will-change:transform;
     animation: zium 15s infinite linear
   }
@@ -98,6 +76,22 @@ section, .slide{
       transform:translateX(-100%);
     }  
   }
+
+.astronaut-box{
+  top:42%;
+  left:48%;
+  right: 0;
+  bottom:0;
+  z-index: 2000;
+}
+@keyframes fru{
+  0%{
+    transform: translate(10%, 100) rotate(10deg)
+  }
+  100%{
+
+  }
+}
 
 .slide-subtitle{
     position:absolute;
@@ -140,9 +134,28 @@ section, .slide{
 .fa-gulp{
   color:#D44945;
 }
+.fa-tree{
+  color: green;
+}
+.fa-vuejs{
+  color:#41B883;
+}
+.fa-question{
+  color: plum;
+}
 .fa-python{
   color:#34709F;
 }
 .fa-smile-beam{
   color: #F9DC28;
+}
+
+picture{
+  width:50%;
+  height: auto;
+  margin:0 auto;
+}
+.moon{
+  bottom:0;
+  width:100%;
 }

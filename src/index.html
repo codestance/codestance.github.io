@@ -3,23 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/webslides.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>The world of K</title>
   </head>
-  <body id="webslides" class="vertical">
-    <!-- <div class="wrapper d-flex flex-column justify-content-between position-fixed px-1">
-      <img src="img/moon.svg" class="img-fluid">
-      <img src="img/earth.svg" class="img-fluid">
-    </div> -->
-    <!-- <div class="wrapper d-flex justify-content-center position-fixed px-1">
-      <div class="astronaut-box position-absolute px-2"><img src="img/astronaut.svg" class="img-fluid"></div>
-      <p class="d-none astronaut-text text-uppercase text-center">I have potential!</p>
-    </div> -->
-    <section class="bg-black-blue">
-      <div class="home" style="width: 100vw; height: 100vh; position:absolute; top:0;left:0;z-index:1000"></div>
-      <svg  class="content-center zoomIn slow" xmlns="http://www.w3.org/2000/svg" 
+  <body class="">
+    <div class="astronaut-box position-absolute"><img src="img/astronaut.svg" class="img-fluid"></div>
+    <section class="d-flex align-items-center" style="width: 100vw; height: 100vh; ">
+      <div class="position-absolute home"></div>
+      <svg  class="d-block mx-auto" xmlns="http://www.w3.org/2000/svg" 
       xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" width="400" height="400">
         <defs>
           <path d="M100,200a100,100 0 1,0 200,0a100,100 0 1,0 -200,0" id="textcircle">
@@ -34,54 +27,53 @@
           />
           </path>
         </defs> 
-        <text dy="70" textLength="1200">
+        <text dy="70" textLength="1000">
           <textPath xlink:href="#textcircle" id="title">Welcome to my world</textPath>
         </text>
-      </svg>      
+      </svg>
+      <!-- <picture > -->
+        <img class="d-block mx-auto position-absolute" src="img/earth.png" style="z-index:1000;top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);">
+      <!-- </picture>       -->
     </section>
-    <section class="slide-top bg-black-blue">
-      <div class="slide-title">
+    <section class="">
+      <div class="section-title">
         <h2 class="title">
           <div class="title-container">
-            <div class="title-elemtent">
-              <strong>web developer</strong>
-            </div>
-            <div class="title-elemtent">
-              <strong>web developer</strong>
-            </div>
-            <div class="title-elemtent">
-              <strong>web developer</strong>
-            </div>
-            <div class="title-elemtent">
-              <strong>web developer</strong>
-            </div>
+            <div class="title-elemtent"><strong>web developer</strong></div>
+            <div class="title-elemtent"><strong>web developer</strong></div>
+            <div class="title-elemtent"><strong>web developer</strong></div>
+            <div class="title-elemtent"><strong>web developer</strong></div>
+            <div class="title-elemtent"><strong>web developer</strong></div>
           </div>
         </h2>
       </div>
       <div class="wrap">
-        <!-- <h2 class="text-landing text-shadow">Web Developer</h2> -->
-        <p class="text-context"> I feel comfortable with: HTML5 CSS3 SCSS Bootstrap RWD Animations JS JQuery SQL Linux Windows</p>
-            <i class="fab fa-3x fa-html5"></i>
-            <i class="fab fa-3x fa-css3-alt"></i>
-            <i class="fab fa-3x fa-sass"></i>
-            <i class="fab fa-3x fa-bootstrap"></i>
-            <i class="fab fa-3x fa-js-square"></i>
-            <i class="fas fa-3x fa-database"></i>
-            <i class="fab fa-3x fa-windows"></i>
-            <i class="fab fa-3x fa-ubuntu"></i>
-        <ul class="flexblock gallery">
-          <li><figure><a href="#1"><img src="img/android.png" alt="1"></a><figcaption><a href="#s1">Source code</a></figcaption></figure></li>
-          <li><figure><a href="#2"><img src="img/android.png" alt="2"></a><figcaption><a href="#s2">Source code</a></figcaption></figure></li>
-          <li><figure><a href="#3"><img src="img/android.png" alt="3"></a><figcaption><a href="#s3">Source code</a></figcaption></figure></li>
-        </ul>
-      <p class="text-context">I'm still learning: Github APIs React Gulp Webpack</p>
-          <i class="fab fa-3x fa-github"></i>
-          <i class="fab fa-3x fa-react"></i>
-          <i class="fab fa-3x fa-gulp"></i>
+        <p class=""> I feel comfortable with:</p>
+        <i class="fab fa-3x fa-html5" title="HTML5"></i>
+        <i class="fab fa-3x fa-css3-alt" title="CSS3"></i>
+        <i class="fab fa-3x fa-sass" title="Sass"></i>
+        <i class="fab fa-3x fa-bootstrap" title="Bootstrap"></i>
+        <i class="fab fa-3x fa-js-square" title="JS"></i>
+        <i class="fas fa-3x fa-database" title="SQL"></i>
+        <i class="fab fa-3x fa-windows" title="Windows"></i>
+        <i class="fab fa-3x fa-ubuntu" title="Linux"></i>
+        <i class="fab fa-3x fa-gulp" title="Gulp"></i>
+        <i class="fas fa-3x fa-tree" title="Nature"></i>
+        <i class="">RWD</i>
+        <i class="">Animations</i>
+        <p class="">I'm still learning: APIs</p>
+        <i class="fab fa-3x fa-github" title="GitHub"></i>
+        <i class="fab fa-3x fa-vuejs" title="Vue"></i>
+        <i class="fab fa-3x fa-react" title="React"></i>
+        <img src="img/webpack-logo.png" title="webpack">
+        <p>And here are some examples of my work</p>
+          
       </div>
     </section>
-    <section class="slide-top bg-black-blue">
-      <div class="slide-title">
+    <section class="">
+      <div class="section-title">
           <h2 class="title">
             <div class="title-container">
               <div class="title-elemtent"><strong>artist</strong></div>
@@ -101,8 +93,9 @@
       <div class="art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/p2.png"></div>
       <div class="art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/k2.svg"></div> -->
     </section>
-    <section class="slide-top bg-black-blue">
-      <div class="slide-title">
+    <section class="physics position-relative vh-100">
+      <img src="img/moon.svg" class="position-absolute">
+      <div class="section-title">
           <h2 class="title">
             <div class="title-container">
               <div class="title-elemtent"><strong>physicist</strong></div>
@@ -113,21 +106,24 @@
           </div>
         </h2>
       </div>
-      <div class="wrap">
-        <div class="grid">
-          <div class="column"><p>V = -G Mm/r1 - GMm/r2</p></div>
-          <div class="column">
-            <i class="fas fa-5x fa-brain"></i>
-            <i class="fas fa-5x fa-atom"></i>
-            <i class="fas fa-5x fa-chart-area"></i>
+      <div class="">
+        <div class="">
+          <div class="potential">
+            <p>I have potential!</p>
+            <p>dV = -G Mm/r1 - GMm/r2</p>
+          </div>
+          <div class="">
+            <i class="fas fa-3x fa-brain" title="Logical thinking (and actually acting)"></i>
+            <i class="fas fa-3x fa-atom" title="Analyzing"></i>
+            <i class="fas fa-3x fa-chart-area" title="Infering"></i>
+            <i class="fas fa-3x fa-question" title="Curiosity"></i>
           </div>
         </div>
-        <p>Logical thinking(and actually acting) Analyzing Infering Curiosity</p>
       </div>
     </section>
-    <section class="slide-top bg-black-blue">
-      <p class="text-subtitle slide-subtitle">If you are not conviced yet, here are some</p>
-      <div class="slide-title slide-title_extras">
+    <section class="">
+      <p class="">If you are not conviced yet, here are some</p>
+      <div class="section-title">
           <h2 class="title text-shadow">
             <div class="title-container">
               <div class="title-elemtent"><strong>extras</strong></div>
@@ -140,13 +136,13 @@
          </h2>
       </div>
       <div class="wrap">
-        <div class="grid aligncenter">
-          <div class="column">
-              <i class="fab fa-5x fa-python"></i>
-              <i class="far fa-5x fa-smile-beam"></i>
+        <div class="">
+          <div class="">
+              <i class="fab fa-5x fa-python" title="Phyton"></i>
+              <i class="far fa-5x fa-smile-beam" title="Humor"></i>
               <p>Python German Spanish Cooking Humor</p>
           </div>
-          <div class="column">
+          <div class="">
             <form method="POST">
                 <input type="email" tabindex="1" name="email" placeholder="your@email.com" required>
                 <textarea  tabindex="2" placeholder="Your message"></textarea>
@@ -157,12 +153,6 @@
       </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="js/webslides.min.js"></script>
-    <script>
-      const ws = new WebSlides({
-        showIndex: false 
-      });
-    </script>
     <script src="js/js.js"></script>
   </body>
 </html>
