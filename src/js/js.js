@@ -8,17 +8,29 @@ $(document).ready(function(){
     // });
     createCanvas();
     setInterval(shine,1000);
-    // $(window).on('scroll',getPotencial);
-    // $(window).on('resize', getPotencial);
+    $(window).on('scroll', Astronaut);
     $(window).on('resize', createCanvas);
 });
 
-// function getPotencial(){
-//     let h = $('.wrapper').height();
-//     let step = $(window).scrollTop()*0.3<h ? $(window).scrollTop()*0.3 : h; 
-//     if(step==h) $('.astronaut-text').removeClass('d-none');   
-//     return $('.astronaut-box').css('transform','translateY(-'+ step + 'px)');
-// }
+var initialOffset = null;
+
+function Astronaut(){
+    if(initialOffset === null){
+        initialOffset = $('.astronaut').offset().top;
+        // console.log('Initial Offset: '+ initialOffset);
+    }
+    let foot = $('.astronaut').offset().top + $('.astronaut').height();
+    let finish = $('.moon').offset().top +$('.moon').height()*0.1;
+    let route = finish-foot;
+    let step = route>0 ? $(window).scrollTop() : finish - initialOffset - $('.astronaut').height();
+    // console.log('stopki:'+foot + ' meta:'+finish + ' droga:' + route + ' krok:'+step);
+    $('.astronaut').css('transform', 'translateY('+ step + 'px)');  
+    // , rotate(' +(Math.random()>0.5)? '+' : '-' + step*0.05+'deg)'
+    if ($(window).scrollTop()===finish){
+        console.log('to tutaj');
+    }
+
+}
 
 const canvas = $('<canvas></canvas>').addClass('canvas-stars');
 $('.home').append(canvas);

@@ -17,10 +17,6 @@ p{
   color: white;
 }
 
-.wrap{
-    padding-top:5rem;
-}
-
 .home{
   width: 100vw; height: 100vh; top:0;left:0;
 }
@@ -77,11 +73,11 @@ p{
     }  
   }
 
-.astronaut-box{
+.astronaut{
   top:42%;
   left:48%;
-  right: 0;
-  bottom:0;
+  // right: 0;
+  // bottom:0;
   z-index: 2000;
 }
 @keyframes fru{
@@ -139,6 +135,9 @@ p{
 }
 .fa-vuejs{
   color:#41B883;
+}
+.fa-lightbulb{
+  color: yellow;
 }
 .fa-question{
   color: plum;
