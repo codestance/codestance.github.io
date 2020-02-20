@@ -8,9 +8,6 @@ body{
 section{
   position: relative;
   padding: 0;
-  @media screen and (min-width:$small){
-    padding: 2rem;
-  }
 }
 p{
   margin:0;
@@ -88,14 +85,18 @@ p{
 
   }
 }
-
-.slide-subtitle{
-    position:absolute;
-    top:0;
+.wrap{
+  @media screen and (min-width:$small){
+    padding: 2rem;
+  }
 }
-.slide-title_extras{
-    top: 2rem;
-}
+// .slide-subtitle{
+//     position:absolute;
+//     top:0;
+// }
+// .slide-title_extras{
+//     top: 2rem;
+// }
 
 .fa-html5 {
   color: #e34f26;
@@ -138,6 +139,9 @@ p{
 }
 .fa-lightbulb{
   color: yellow;
+}
+.fa-brain{
+  color: #B17C69;
 }
 .fa-question{
   color: plum;

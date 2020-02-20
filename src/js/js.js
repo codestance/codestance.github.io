@@ -7,30 +7,48 @@ $(document).ready(function(){
     //     $('.menu-button').children(2).removeClass('open');
     // });
     createCanvas();
+    flyAstronaut();
     setInterval(shine,1000);
-    $(window).on('scroll', Astronaut);
+    // $(window).on('scroll', Astronaut);
     $(window).on('resize', createCanvas);
 });
 
-var initialOffset = null;
+function flyAstronaut(){
+    const initFoot = $('.astronaut').offset().top + $('.astronaut').height();
+    let angle = 0;
 
-function Astronaut(){
-    if(initialOffset === null){
-        initialOffset = $('.astronaut').offset().top;
-        // console.log('Initial Offset: '+ initialOffset);
-    }
-    let foot = $('.astronaut').offset().top + $('.astronaut').height();
-    let finish = $('.moon').offset().top +$('.moon').height()*0.1;
-    let route = finish-foot;
-    let step = route>0 ? $(window).scrollTop() : finish - initialOffset - $('.astronaut').height();
-    // console.log('stopki:'+foot + ' meta:'+finish + ' droga:' + route + ' krok:'+step);
-    $('.astronaut').css('transform', 'translateY('+ step + 'px)');  
-    // , rotate(' +(Math.random()>0.5)? '+' : '-' + step*0.05+'deg)'
-    if ($(window).scrollTop()===finish){
-        console.log('to tutaj');
-    }
+    function fly(){
+        let foot = $('.astronaut').offset().top + $('.astronaut').height();
+        let finish = $('.moon').offset().top +$('.moon').height()*0.1;
+        // console.log('offset: ', initialOffset, 'foot: ', foot, 'finish: ', finish)
+        let step;
+        if (finish > foot){
+            step = $(window).scrollTop();
+        } else {
+            return;
+        }
+        $('.astronaut').css('transform', 'translateY('+ step + 'px) rotate(' + angle + 'deg)');
+        angle = (foot - initFoot) / (finish - initFoot) * 360;
 
+    }
+    $(window).on('scroll', fly);
 }
+// const astrOff = $('.astronaut').offset().top;
+// function Astronaut(){
+//     let foot = $('.astronaut').offset().top + $('.astronaut').height();
+//     let finish = $('.moon').offset().top +$('.moon').height()*0.1;
+//     let angle = (foot - astrOff) / (finish - astrOff) * 360;
+//     let step;
+//     if (finish > foot){
+//         step = $(window).scrollTop();
+//     } else {
+//         return;
+//     }
+//     console.log(angle);
+//     $('.astronaut').css('transform', 'translateY('+ step + 'px) rotate(' + angle + 'deg)');  
+//     // angle+=foot / finish *360;
+//     // console.log(angle);
+// }
 
 const canvas = $('<canvas></canvas>').addClass('canvas-stars');
 $('.home').append(canvas);
