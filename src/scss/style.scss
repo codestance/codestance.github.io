@@ -24,7 +24,7 @@ p{
   font-weight: 900; 
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  text-shadow: 0 0 1rem rgba(255,255,255,.5);
+  text-shadow: 0 0 0.6rem rgba(255,255,255,.8);
   z-index: 1000;
 }
 .canvas-stars{
@@ -39,7 +39,7 @@ p{
     top: 0;
     left: 0;
     width:100%;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .title{
     transform: translate3d(3rem,0,0);
@@ -87,7 +87,7 @@ p{
 }
 .wrap{
   @media screen and (min-width:$small){
-    padding: 2rem;
+    padding:3rem 2rem 1rem 2rem;
   }
 }
 // .slide-subtitle{

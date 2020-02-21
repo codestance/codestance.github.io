@@ -10,9 +10,9 @@
   </head>
   <body class="">
     <div class="astronaut position-absolute"><img src="img/astronaut.svg" class="img-fluid"></div>
-    <section class="d-flex align-items-center" style="width: 100vw; height: 100vh; ">
+    <section class="d-flex align-items-center justify-content-center" style="width: 100vw; height: 100vh; ">
       <div class="position-absolute home"></div>
-      <svg  class="d-block mx-auto" xmlns="http://www.w3.org/2000/svg" 
+      <svg  class="d-block mx-auto position-absolute" fill="#fff" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" 
       xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" width="400" height="400">
         <defs>
           <path d="M100,200a100,100 0 1,0 200,0a100,100 0 1,0 -200,0" id="textcircle">
@@ -27,7 +27,7 @@
           />
           </path>
         </defs> 
-        <text dy="70" textLength="1000">
+        <text dy="50" textLength="1000">
           <textPath xlink:href="#textcircle" id="title">Welcome to my world</textPath>
         </text>
       </svg>
@@ -51,6 +51,7 @@
       </div>
       <div class="wrap">
         <p class=""> I feel comfortable with:</p>
+        <br/>
         <i class="fab fa-3x fa-html5" title="HTML5"></i>
         <i class="fab fa-3x fa-css3-alt" title="CSS3"></i>
         <i class="fab fa-3x fa-sass" title="Sass"></i>
@@ -61,14 +62,18 @@
         <i class="fab fa-3x fa-ubuntu" title="Linux"></i>
         <i class="fab fa-3x fa-gulp" title="Gulp"></i>
         <i class="fas fa-3x fa-tree" title="Nature"></i>
-        <i class="">RWD</i>
-        <i class="">Animations</i>
-        <p class="">I'm still learning: APIs</p>
+        <br/>
+        <br/>
+        <p class="">I'm still learning:</p>
+        <br/>
         <i class="fab fa-3x fa-github" title="GitHub"></i>
         <i class="fab fa-3x fa-vuejs" title="Vue"></i>
         <i class="fab fa-3x fa-react" title="React"></i>
-        <img src="img/webpack-logo.png" title="webpack">
-        <p>And here are some examples of my work</p>
+        <img src="img/webpack-logo.png" title="Webpack">
+        <br/>
+        <br/>
+        <p>And here are some examples of my work:</p>
+        <br/>
           
       </div>
     </section>
@@ -99,7 +104,7 @@
       </div>
     </section>
     <section class="physics position-relative">
-      <div class="position-absolute moon"><img src="img/moon.svg" class="img-fluid"></div>
+      <div class="position-absolute moon mx-auto"><img src="img/moon.svg" class="img-fluid"></div>
       <div class="section-title">
           <h2 class="title">
             <div class="title-container">
