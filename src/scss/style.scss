@@ -13,7 +13,11 @@ p{
   margin:0;
   color: white;
 }
-
+label{
+  span{
+    color: white;
+  }
+}
 .home{
   width: 100vw; height: 100vh; top:0;left:0;
 }
@@ -70,19 +74,12 @@ p{
       transform:translateX(-100%);
     }  
   }
-
+$astronautWidth: 62px;
 .astronaut{
-  top:42%;
-  left:46%;
+  top: 42%;
+  left: 47%;
+  left: calc((100vw - 62px)/2);
   z-index: 2000;
-}
-@keyframes fru{
-  0%{
-    transform: translate(10%, 100) rotate(10deg)
-  }
-  100%{
-
-  }
 }
 .wrap{
   padding: 2.5rem .5rem 1rem .5rem;
@@ -141,8 +138,8 @@ p{
 .fa-question{
   color: plum;
 }
-.fa-python{
-  color:#34709F;
+.fa-cookie-bite{
+  color: #F8B154;
 }
 .fa-smile-beam{
   color: #F9DC28;
@@ -156,4 +153,15 @@ picture{
 .moon{
   bottom:0;
   width:100%;
+}
+.potential{
+  p{
+    overflow: hidden;
+    margin: 0 auto;
+    animation: typing 3.5s steps(30, end);
+  }
+}
+@keyframes typing{
+  from {width: 0}
+  to {width: 100%}
 }
