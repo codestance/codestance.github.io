@@ -1,4 +1,4 @@
-$small: 500px;
+$small: 576px;
 html{
   overflow-x: hidden;
 }
@@ -86,74 +86,10 @@ $astronautWidth: 62px;
 }
 .wrap{
   padding: 2.5rem .5rem 1rem .5rem;
-  @media screen and (min-width:$small){
+  @media only screen and (min-width: $small){
     padding: 3rem 2rem 1rem 2rem;
   }
 }
-.fa-html5 {
-  color: #e34f26;
-}
-.fa-css3-alt{
-  color: #1680C0;
-}
-.fa-sass{
-  color: #c69;
-}
-.fa-bootstrap{
-  color:  #7952b3;
-}
-.fa-js-square{
-  color: #F7DF1E;
-}
-.fa-database{
-  color: #2258CA;
-}
-.fa-windows{
-  color:#00ACEE;
-}
-.fa-ubuntu{
-  color:#FF5722;
-}
-.fa-github {
-  color: #333;
-}
-.fa-react{
-  color: #58D4F6;
-}
-.fa-gulp{
-  color:#D44945;
-}
-.fa-tree{
-  color: green;
-}
-.fa-vuejs{
-  color:#41B883;
-}
-.fa-lightbulb{
-  color: yellow;
-}
-.fa-brain{
-  color: #B17C69;
-}
-.fa-atom{
-  color: royalblue;
-}
-.fa-chart-area{
-  color: orange;
-}
-.fa-question{
-  color: plum;
-}
-.fa-search{
-  color: lightgreen;
-}
-.fa-cookie-bite{
-  color: #F8B154;
-}
-.fa-smile-beam{
-  color: #F9DC28;
-}
-
 picture{
   width:50%;
   height: auto;

@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?x4d80y');
+  src:  url('../fonts/icomoon.eot?x4d80y#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?x4d80y') format('truetype'),
+    url('../fonts/icomoon.woff?x4d80y') format('woff'),
+    url('../fonts/icomoon.svg?x4d80y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-size: 2rem;
+  /* speak: none; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-cogs:before {
+  content: "\f085";
+  color: silver;
+}
+.icon-gears:before {
+  content: "\f085";
+}
+.icon-paint-brush:before {
+  content: "\f1fc";
+  color: salmon;
+}
+.icon-search:before {
+  content: "\e901";
+  color: lightseagreen;
+}
+.icon-question:before {
+  content: "\e902";
+  color: springgreen;
+}
+.icon-lightbulb-o:before {
+  content: "\e903";
+  color: yellow;
+}
+.icon-tree:before {
+  content: "\e904";
+  color: green;
+}
+.icon-color_lens:before {
+  content: "\e900";
+}
+.icon-palette:before {
+  content: "\e900";
+  color: lightskyblue;
+}
+.icon-adobexd:before {
+  content: "\e905";
+  color: #ff2bc2;
+}
+.icon-bootstrap:before {
+  content: "\e907";
+  color: #563d7c;
+}
+.icon-css3:before {
+  content: "\e908";
+  color: #1572b6;
+}
+.icon-gimp:before {
+  content: "\e909";
+  color: #5c5543;
+}
+.icon-github:before {
+  content: "\e90a";
+}
+.icon-gulp:before {
+  content: "\e90b";
+  color: #da4648;
+}
+.icon-html5:before {
+  content: "\e90c";
+  color: #e34f26;
+}
+.icon-javascript:before {
+  content: "\e90d";
+  color: #f7df1e;
+}
+.icon-jquery:before {
+  content: "\e906";
+  color: #0769ad;
+}
+.icon-npm:before {
+  content: "\e914";
+  color: #cb3837;
+}
+.icon-react:before {
+  content: "\e90e";
+  color: #61dafb;
+}
+.icon-sass:before {
+  content: "\e90f";
+  color: #c69;
+}
+.icon-ubuntu:before {
+  content: "\e910";
+  color: #e95420;
+}
+.icon-visualstudiocode:before {
+  content: "\e918";
+  color: #007acc;
+}
+.icon-vue-dot-js:before {
+  content: "\e911";
+  color: #4fc08d;
+}
+.icon-webpack:before {
+  content: "\e912";
+  color: #8dd6f9;
+}
+.icon-windows:before {
+  content: "\e913";
+  color: #0078d6;
+}
+.icon-database:before {
+  content: "\e964";
+  color: lightskyblue;
+}
+.icon-stats-dots:before {
+  content: "\e99b";
+  color: orange;
+}
+.icon-cookie:before {
+  content: "\e9a3";
+  color: #F8B154;
+}
+.icon-smile2:before {
+  content: "\e9e2";
+  color: yellow;
+}
