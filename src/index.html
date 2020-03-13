@@ -11,7 +11,7 @@
   <body class="">
     <div class="astronaut position-absolute"><img src="img/astronaut.svg" class="img-fluid"></div>
     <section class="d-flex align-items-center justify-content-center" style="width: 100vw; height: 100vh; ">
-      <div class="position-absolute home"></div>
+      <div class="home position-absolute"></div>
       <svg  class="d-block mx-auto position-absolute" fill="#fff" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" 
       xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" width="400" height="400">
         <defs>
@@ -70,16 +70,15 @@
             <p class="">I'm still learning:</p>
             <label class="text-center px-1"><span class="icon-github"></span><span class="d-block">GitHub</span></label>
             <label class="text-center px-1"><span class="icon-vue-dot-js"></span></i><span class="d-block">Vue</span></label>
-            <label class="text-center px-1"><span class="icon-react"></span><span class="d-block">React</span></label>
+            <!-- <label class="text-center px-1"><span class="icon-react"></span><span class="d-block">React</span></label> -->
             <label class="text-center px-1"><span class="icon-webpack"></span><span class="d-block">webpack</span></label>
             <label class="text-center px-1"><span class="icon-npm"></span><span class="d-block">npm</span></label>
           </div>
         </div>
-        <div class="row">
-          <p>And here are some examples of my work:</p>
-          <div class="col-sm-auto">1</div>
-          <div class="col-sm-auto">2</div>
-          <div class="col-sm-auto">3</div>
+        <div class="row pt-2">
+            <div class="col-sm-auto"><img src="img/eunika.png" class="shadow-custom"></div>
+            <div class="col-sm-auto"><img src="img/ewa.png" class="shadow-custom"></div>
+            <div class="col-sm-auto"><img src="img/gridGallery.png" class="shadow-custom"></div>
         </div>
       </div>
     </section>
@@ -105,12 +104,10 @@
           <label class="text-center px-1"><span class="icon-paint-brush"></span><span class="d-block">Corel Painter</span></label>
           <label class="text-center px-1"><span class="icon-palette"></span><span class="d-block">MS Paint</span></label>
         </div>
-      </div>
-      <div class="container-fluid">
         <div class="row">
           <div class="col-sm-auto art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/p1.png"></div>
-          <div class="col-sm-auto art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/p1.png"></div>
-          <div class="col-sm-auto art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/p1.png"></div>
+          <div class="col-sm-auto art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/p2.png"></div>
+          <div class="col-sm-auto art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/panda2a.png"></div>
           <div class="col-sm-auto art-container rounded-circle"><img class="art-img img-fluid rounded-circle" src="img/p1.png"></div>
         </div>
       </div>
@@ -129,17 +126,17 @@
         </h2>
       </div>
       <div class="wrap">
-          <div class="row">
-            <label class="text-center px-1"><span class="icon-cogs"></span><span class="d-block">Logical thinking</span></label>
-            <label class="text-center px-1"><i class="fas fa-3x fa-atom" title="Analyzing"></i><span class="d-block">Analyzing</span></label>
-            <label class="text-center px-1"><span class="icon-stats-dots"></span><span class="d-block">Infering</span></label>
-            <label class="text-center px-1"><span class="icon-question"></span><span class="d-block">Curiosity</span></label>
-          </div>
-          <div class="potential">
-            <p>I have potential!</p>
-            <p>dV = -G Mm/r1 - GMm/r2</p>
-          </div>
-          <div class="moon text-center"><img src="img/moon.svg" class="img-fluid"></div>
+        <div class="row">
+          <label class="text-center px-1"><span class="icon-cogs"></span><span class="d-block">Logical thinking</span></label>
+          <!-- <label class="text-center px-1"><i class="fas fa-3x fa-atom" title="Analyzing"></i><span class="d-block">Analyzing</span></label> -->
+          <label class="text-center px-1"><span class="icon-stats-dots"></span><span class="d-block">Infering</span></label>
+          <label class="text-center px-1"><span class="icon-question"></span><span class="d-block">Curiosity</span></label>
+        </div>
+        <div class="potential">
+          <p>I have potential!</p>
+          <p>dV = -G Mm/r1 - GMm/r2</p>
+        </div>
+        <div class="moon text-center"><img src="img/moon.svg" class="img-fluid"></div>
       </div>
     </section>
     <section class="extras">
@@ -167,14 +164,14 @@
               <label class="text-center px-1"><span class="icon-smile2"></span><span class="d-block">Humor</span></label>
           </div>
           <div class="col-sm">
-            <form method="POST">
+            <form method="POST" action="http://formspree.io/skrzynska.konstancja@gmail.com">
               <div class="form-group">
-                <input type="email" name="email" id="" placeholder="your@email.com" required>
+                <input type="email" name="_replyto" placeholder="your@email.com" required>
               </div>
               <div class="form-group">
-                <textarea name="" id="" rows="3" placeholder="Your message"></textarea>
+                <textarea name="body" rows="3" placeholder="Your message"></textarea>
               </div>
-              <button type="submit" tabindex="3" title="hire me">Hire me ›</button>
+              <button type="submit" tabindex="3" title="Send the message" class="btn btn-large btn-outline-success shadow-custom">Hire me ›</button>
             </form>
           </div>
         </div>        
