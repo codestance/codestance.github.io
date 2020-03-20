@@ -11,6 +11,7 @@ $(document).ready(function(){
     setInterval(shine,1000);
     // $(window).on('scroll', Astronaut);
     $(window).on('resize', createCanvas);
+    $(window).on('resize', flyAstronaut)
 });
 
 function flyAstronaut(){
@@ -61,20 +62,20 @@ function createCanvas(){
         new Circle();       
     }
 }
-function getBackgroundColor() {
-    return 'rgb('+[
-        Math.round(Math.random()*0xFF),
-        Math.round(Math.random()*0xFF),
-        Math.round(Math.random()*0xFF)
-    ].join()+')';
-}
+// function getBackgroundColor() {
+//     return 'rgb('+[
+//         Math.round(Math.random()*0xFF),
+//         Math.round(Math.random()*0xFF),
+//         Math.round(Math.random()*0xFF)
+//     ].join()+')';
+// }
 const stars=[];
 function shine(){
     for(let i=0; i<3;i++){
         let star = stars[~~(Math.random()*stars.length)];
         ctx.beginPath();
         ctx.globalCompositeOperation = 'destination-out';
-        ctx.arc(star[0], star[1], star[2], 0, 2 * Math.PI);
+        ctx.arc(star[0], star[1], star[2]+1, 0, 2 * Math.PI);
         ctx.fill();
         setTimeout(function(){
             ctx.beginPath();
@@ -88,14 +89,23 @@ function shine(){
 const Circle = function(){
     let h = window.innerHeight;
     let w = window.innerWidth;
-    let rad = Math.floor(Math.random()*3)+3;
+    let rad = Math.floor(Math.random()*2)+3;
+    let innerRad = Math.ceil((rad-1)/2);
     let x=Math.random()*(w-rad*2)+rad;
+    let innerX = Math.ceil(x/2);
     let y=Math.random()*(h-rad*2)+rad;
-    let colorC = getBackgroundColor();
+    let innerY = Math.ceil(y/2);
+    let radgrad = ctx.createRadialGradient(innerX, innerY, innerRad, x, y, rad);
+    radgrad.addColorStop(0,'white');
+    radgrad.addColorStop(0.8, 'snow');
+    radgrad.addColorStop(1, 'azure');
+    // let colorC = getBackgroundColor();
+    // let colorC = "rgb(255,255,255)";
     ctx.beginPath();
-    ctx.fillStyle=colorC;
+    // ctx.fillStyle=colorC;
+    ctx.fillStyle = radgrad;
     ctx.globalAlpha = 0.9;
-    stars.push([x,y,rad,colorC]);
+    stars.push([x,y,rad,radgrad]);
     ctx.arc(x, y, rad, 0, 2 * Math.PI);
     ctx.fill();
 };
