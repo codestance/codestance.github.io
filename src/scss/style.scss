@@ -1,6 +1,6 @@
 @import 'settings';
 .home{
-  background: $bgColor;
+  background: $primary;
   height: 110vh;
 }
 // .home::before{
@@ -36,10 +36,11 @@
   margin: 0;
   white-space: nowrap;
   letter-spacing: .4rem;
+  color: $secondary;
 }
 .title-elemtent {
   padding: .5rem 3rem;
-  color: $secondaryColor;
+  color: $secondary;
   font-size: 2.5rem;
   // text-shadow: 0 0 1rem #e83a35, 1px 1px 1rem #e83a35, 2px 2px 1rem #e83a35, -1px -1px 1rem #e83a35, -2px -2px 1rem #e83a35;
   will-change:transform;
@@ -67,24 +68,33 @@ $astronautWidth: 62px;
   }
 }
 .img-border{
-  border: 0.5rem solid $secondaryColor;
+  border: 0.5rem solid $secondary;
   @media only screen and (min-width: $medium){
-    border: 1rem solid $secondaryColor;
+    border: 1rem solid $secondary;
   }
 }
 .wave{
     width: 100%;
     bottom: 0;
 }
+.wave2{
+  top: 0;
+}
 
 .skills{
-  // background: #0099ff;
-  background: #fff;
+  background: $fourth;
+  .star{
+    right:0;
+  }
 }
 picture{
   width:50%;
   height: auto;
   margin:0 auto;
+}
+
+.extras{
+  background: $primary;
 }
 .moon{
   bottom:0;
@@ -103,11 +113,10 @@ picture{
 }
 
 button[type="submit"]{
-  color: $secondaryColor;
-  background-color: transparent;
-  border-color: $secondaryColor;
+  color: $fourth;
+  background-color: $secondary;
   &:hover{
-    color: snow;
-    background-color: $secondaryColor;
+    color: $primary;
+    background-color: $third;
   }
 }
