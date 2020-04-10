@@ -1,7 +1,20 @@
 @import 'settings';
+.home{
+  background: $bgColor;
+  height: 110vh;
+}
+// .home::before{
+//   content:"";
+//   width: 100%;
+//   height: 80px;;
+//   position: absolute;
+//   bottom:0;
+//   background: url('../img/wave.svg') no-repeat;
+//   background-size: 100%;
+// }
 .canvas-div{
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   top:0;
   left:0;
 }
@@ -59,7 +72,15 @@ $astronautWidth: 62px;
     border: 1rem solid $secondaryColor;
   }
 }
+.wave{
+    width: 100%;
+    bottom: 0;
+}
 
+.skills{
+  // background: #0099ff;
+  background: #fff;
+}
 picture{
   width:50%;
   height: auto;
