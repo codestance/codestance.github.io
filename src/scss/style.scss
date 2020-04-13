@@ -68,10 +68,13 @@ $astronautWidth: 62px;
   }
 }
 .img-border{
-  border: 0.5rem solid $secondary;
-  @media only screen and (min-width: $medium){
-    border: 1rem solid $secondary;
-  }
+  // box-shadow: 0px 0px 5px 0px #828282;
+  box-shadow: 0px 0px 1.5rem 0px $secondary;
+
+  // border: 0.5rem solid $secondary;
+  // @media only screen and (min-width: $medium){
+  //   border: 1rem solid $secondary;
+  // }
 }
 .wave{
     width: 100%;
@@ -85,6 +88,13 @@ $astronautWidth: 62px;
   background: $fourth;
   .star{
     right:0;
+  }
+}
+.folio{
+  background: $fourth;
+  .star2{
+    top: 2rem;
+    left: 20%;
   }
 }
 picture{

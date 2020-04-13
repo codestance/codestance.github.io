@@ -53,7 +53,7 @@
 }
 .icon-lightbulb-o:before {
   content: "\e903";
-  color: yellow;
+  color: #e2e200;
 }
 .icon-tree:before {
   content: "\e904";
@@ -147,5 +147,5 @@
 }
 .icon-smile2:before {
   content: "\e9e2";
-  color: yellow;
+  color: #ffc517;
 }
