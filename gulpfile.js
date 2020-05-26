@@ -7,7 +7,7 @@ const gulp = require('gulp'),
 gulp.task('style',function(){
     return gulp.src('src/scss/*.scss')
       .pipe(sass().on('error', sass.logError))
-      .pipe(prefix({browsers : 'last 2 versions'}))
+      .pipe(prefix())
       .pipe(cssmin({compatibility: 'ie8'}))
       .pipe(gulp.dest('src/css'))
       .pipe(browserSync.stream());
