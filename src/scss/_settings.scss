@@ -1,16 +1,8 @@
+@import 'variables';
 @import url('https://fonts.googleapis.com/css?family=Raleway:200i&display=swap');
-$small: 576px;
-$medium: 768px;
-// $bgColor: #0d1732;
-$primary: #364f6b;
-// $secondaryColor: #e83a35;
-$secondary: #fc5185;
-$third: #43dde6;
-$fourth: #f0f0f0;
 
 body{
   font-family: 'Raleway', sans-serif;
-  // background-color: $bgColor;
 }
 section{
   position: relative;

@@ -21,7 +21,6 @@ function flyAstronaut(){
     function fly(){
         let foot = $('.astronaut').offset().top + $('.astronaut').height();
         let finish = $('.moon').offset().top +$('.moon').height()*0.1;
-        // console.log('offset: ', initialOffset, 'foot: ', foot, 'finish: ', finish)
         let step;
         if (finish > foot){
             step = $(window).scrollTop();
