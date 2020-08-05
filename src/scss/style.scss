@@ -18,11 +18,13 @@
   z-index: 100;
 }
 .welcome{
-  font-size: 3.5rem;
-  font-weight: 900; 
-  letter-spacing: 0.2rem;
+  font-family: Coiny;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: -1.2rem;
   text-shadow: 0 0 .8rem white;
   mix-blend-mode: difference;
+  position: relative;
   z-index: 1000;
 }
 .title{
@@ -31,7 +33,6 @@
   margin: 0;
   padding-left: 2em;
   white-space: nowrap;
-  letter-spacing: .4rem;
   color: $secondary;
 }
 
@@ -57,7 +58,7 @@ $astronautWidth: 62px;
     z-index: 3;
     img{
       box-shadow: 0px 0px 1.5rem 0px $secondary;
-      height: 90%;
+      max-height: 90%;
     }
     a{
       padding: 0 .5em;
@@ -69,6 +70,9 @@ $astronautWidth: 62px;
     gap: .5em;
     .gallery-elem{
       display: table-cell;
+      img{
+        max-height: none;
+      }
     }
     .gallery-elem:nth-child(6),
     .gallery-elem:nth-child(2),
@@ -94,20 +98,23 @@ $astronautWidth: 62px;
 }
 
 .wave{
-    width: 100%;
     bottom: 0;
+    left: 0;
 }
 .wave2{
   top: 0;
+  left: 0;
+}
+.self-ad{
+  font-family: Coiny;
+  font-size: 1.5em;
 }
 .skills{
-  background: $fourth;
   .star{
     right:0;
   }
 }
 .folio{
-  background: $fourth;
   .star2{
     top: 2rem;
     left: 20%;

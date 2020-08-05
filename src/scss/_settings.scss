@@ -1,12 +1,18 @@
 @import 'variables';
 @import url('https://fonts.googleapis.com/css?family=Raleway:200i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
 
 body{
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, sans-serif;
 }
 section{
   position: relative;
-  padding: 0;
+  padding: 1rem;
+  background: $fourth;
+}
+h1,h2{
+  font-family: Coiny;
+  text-transform: uppercase;
 }
 p{
   margin:0;
