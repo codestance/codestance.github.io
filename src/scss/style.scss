@@ -17,16 +17,20 @@
   height: 100%;
   z-index: 100;
 }
-.welcome{
-  font-family: Coiny;
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: -1.2rem;
-  text-shadow: 0 0 .8rem white;
-  mix-blend-mode: difference;
-  position: relative;
-  z-index: 1000;
+.orbit{
+  max-width: 400px;
+  .orbit-text{
+    font-family: Coiny;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: -.3rem;
+    text-shadow: 0 0 .8rem white;
+    mix-blend-mode: difference;
+    position: relative;
+    z-index: 1000;
+  }
 }
+
 .title{
   position: relative;
   z-index: 2;
