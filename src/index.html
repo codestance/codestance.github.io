@@ -10,180 +10,246 @@
   </head>
   <body>
     <div class="astronaut position-absolute"><img src="img/astronaut.svg" class="img-fluid"></div>
-    <section class="home d-flex flex-column align-items-center justify-content-center w-100">
-      <svg class="orbit d-block mx-auto position-absolute" fill="#fff" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-        <!-- <circle id="circle" cx="200" cy="200" r="140" fill="transparent" stroke="none">
-          <animateTransform
-          attributeName="transform"
-          begin="0s"
-          dur="50s"
-          type="rotate"
-          from="-130 200 200"
-          to="230 200 200"
-          repeatCount="indefinite" 
-          />
-        </circle> -->
-        <path id="circlePath" d="M 200, 200 m -135, 0 a 135, 135 0 1, 1 270, 0 a 135, 135 0 1, 1 -270, 0" fill="transparent">
-          <animateTransform
-          attributeName="transform"
-          begin="0s"
-          dur="50s"
-          type="rotate"
-          from="0 200 200"
-          to="360 200 200"
-          repeatCount="indefinite" 
-          />
-        </path>
-        <text>
-          <textPath href="#circlePath" class="orbit-text" fill="white">Hello, earthlings!</textPath>
-        </text>
-      </svg>
-      <picture class="flex-grow-1">
-        <img class="d-block mx-auto position-absolute" src="img/planet.svg" style="z-index:1000;top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);">
-      </picture>
-      <svg class="wave w-100 position-absolute" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320"><path fill="#f0f0f0" fill-opacity="1" d="M0,0L16,16C32,32,64,64,96,80C128,96,160,96,192,90.7C224,85,256,75,288,96C320,117,352,171,384,170.7C416,171,448,117,480,112C512,107,544,149,576,154.7C608,160,640,128,672,149.3C704,171,736,245,768,245.3C800,245,832,171,864,122.7C896,75,928,53,960,80C992,107,1024,181,1056,213.3C1088,245,1120,235,1152,224C1184,213,1216,203,1248,208C1280,213,1312,235,1344,250.7C1376,267,1408,277,1424,282.7L1440,288L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg>
-    </section>
-    <section class="self-ad">
-      <p class="text-center">If you are looking to build a website that is fast, beautiful and well visible in the search results, you have come to the right place.</p>
-      <p class="text-center">I'm going to make your websites out of this world!</p>
-    </section>
-    <section class="skills">
-      <svg width="94" height="202" viewBox="0 0 94 202" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M43.6249 10.778C44.4063 10.778 45.0931 10.6312 45.6852 10.3731C51.8632 19.5305 58.0056 28.7251 63.8777 38.0804C60.8882 40.2229 61.2877 45.7257 65.0764 46.97C63.776 57.0361 62.5116 67.119 61.5553 77.2245C61.5051 77.2233 61.4545 77.2226 61.4035 77.2226C59.9804 77.2226 58.8713 77.7096 58.0762 78.4685C49.1112 71.2263 40.1469 63.9841 31.1827 56.742C32.3605 53.7907 30.8786 49.6667 26.7369 49.6667C26.306 49.6667 25.904 49.7113 25.5307 49.7946L24.8987 48.8715L24.8986 48.8714C21.9781 44.6057 19.0574 40.3399 16.2791 35.9812C14.9346 33.8725 13.7146 31.7055 12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421C11.3529 27.5104 10.2109 25.4819 8.96934 23.508C10.1469 22.1953 10.5063 20.2322 10.0477 18.5224C19.7862 15.0421 29.5 11.4947 39.1899 7.88034C39.8516 9.5117 41.3299 10.778 43.6249 10.778ZM66.7369 47.2226L66.7104 47.2226C65.4088 57.303 64.1457 67.4001 63.1941 77.5201C66.9777 78.8884 67.2369 84.5934 63.9719 86.556C66.9114 91.3624 69.8799 96.1511 72.8483 100.94C77.7163 108.793 82.5843 116.646 87.3247 124.577C87.8133 124.42 88.3578 124.333 88.9582 124.333C95.4075 124.333 95.4075 134.333 88.9582 134.333C88.7611 134.333 88.57 134.324 88.3849 134.306L82.5855 172.969C86.3674 175.169 85.529 182.333 80.0702 182.333C78.4689 182.333 77.2652 181.717 76.4591 180.79L48.3251 195.639C48.9586 198.476 47.3919 201.888 43.6249 201.888C37.1756 201.888 37.1756 191.888 43.6249 191.888C45.5763 191.888 46.9372 192.803 47.7077 194.08L75.6042 179.357C74.4638 176.41 75.9525 172.333 80.0702 172.333C80.3954 172.333 80.7043 172.359 80.9967 172.407L86.7767 133.873C83.574 132.362 83.2683 127.523 85.8596 125.376C81.119 117.445 76.2507 109.591 71.3823 101.738L71.381 101.736C68.3691 96.877 65.3573 92.0183 62.3756 87.1412C62.0697 87.1945 61.7457 87.2226 61.4035 87.2226C57.1038 87.2226 55.6707 82.7779 57.1041 79.8149L43.7769 69.0483L30.3088 58.1679C29.5031 59.0699 28.3124 59.6667 26.7369 59.6667C21.408 59.6667 20.4822 52.8394 23.9596 50.4672L23.4435 49.7189C20.92 46.0598 18.3958 42.3997 16.0084 38.6545C14.547 36.3637 13.2156 33.9968 11.8851 31.6313L11.885 31.6311L11.885 31.6311L11.8849 31.631L11.8849 31.631L11.8849 31.631L11.8849 31.631L11.8849 31.631L11.8849 31.6309C10.5299 29.2221 9.17585 26.8148 7.68613 24.4908C7.04569 24.8133 6.28482 25 5.40353 25C-1.0458 25 -1.0458 15 5.40353 15C7.25621 15 8.57668 15.8252 9.36493 17.0016C19.2039 13.4866 29.0178 9.90315 38.8072 6.25131C38.5906 3.60394 40.1965 0.777985 43.6249 0.777985C48.5881 0.777985 49.7318 6.70035 47.0559 9.42974C53.2874 18.6669 59.4843 27.9414 65.4058 37.3801C65.8139 37.2779 66.2576 37.2226 66.7369 37.2226C73.1862 37.2226 73.1862 47.2226 66.7369 47.2226Z" fill="white"/>
-      </svg>
-      <svg width="106" height="157" viewBox="0 0 106 157" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M99.1461 9.99936L99.1131 9.99975L99.0568 10C96.6562 10 95.1491 8.61438 94.5357 6.8747C79.5601 11.0032 64.5845 15.1308 49.6089 19.2583C49.9391 21.4708 48.9732 23.9129 46.7112 24.7821C49.502 33.7822 51.9941 42.8607 54.1892 52.0249C54.8125 51.7268 55.5464 51.5553 56.3908 51.5553C58.6767 51.5553 60.1522 52.8121 60.8173 54.4346C65.5196 52.9111 70.1427 51.1541 74.7639 49.3979C81.7746 46.7334 88.7808 44.0707 96.0517 42.2281C95.7049 39.692 97.0544 36.8802 100.1 36.4904C100.077 34.2937 100.095 32.0892 100.112 29.8829V29.8828C100.166 23.2166 100.22 16.534 99.1461 9.99936ZM56.3908 61.5553C59.8285 61.5553 61.4334 58.713 61.2056 56.059C65.9277 54.5312 70.5695 52.7671 75.2091 51.0038C82.2286 48.336 89.2433 45.67 96.524 43.8272C97.2366 45.3211 98.6738 46.4447 100.836 46.4447C106.958 46.4447 107.268 37.4312 101.765 36.5189C101.739 34.2882 101.755 32.0502 101.771 29.8109V29.8104V29.81V29.8096V29.8091V29.8087V29.8083V29.8078V29.8074C101.819 23.0746 101.866 16.3286 100.787 9.72384C105.443 8.11286 104.866 0 99.0568 0C95.7326 0 94.1218 2.65682 94.2245 5.23158C86.5459 7.34798 78.8673 9.46461 71.1887 11.5812L71.1694 11.5866L71.1588 11.5895C63.8112 13.6149 56.4635 15.6403 49.1159 17.6655C48.3933 16.2033 46.9667 15.1113 44.836 15.1113C38.388 15.1113 38.388 25.1113 44.836 25.1113C44.9141 25.1113 44.9913 25.1099 45.0675 25.107C47.9409 34.3664 50.4988 43.7094 52.7431 53.1421C51.9105 54.1245 51.5154 55.4434 51.5579 56.7451C37.5164 55.9567 23.4619 55.2072 9.40381 54.8218C8.82338 53.0165 7.30077 51.5553 4.836 51.5553C-1.38438 51.5553 -1.60396 60.8618 4.17725 61.5188C4.3481 66.0474 4.24099 70.5781 4.1339 75.1081C4.00676 80.4863 3.87965 85.8636 4.21775 91.2351C0.3007 93.3533 1.09927 100.667 6.61347 100.667C8.75508 100.667 10.1854 99.5635 10.9044 98.09C22.8866 100.518 34.9723 102.334 47.112 103.781C47.1553 105.986 48.4538 108.162 51.0074 108.591C48.8207 117.933 46.8048 127.313 44.7889 136.694C44.5836 137.649 44.3783 138.604 44.1729 139.559C44.0984 139.557 44.0231 139.555 43.9468 139.555C37.4988 139.555 37.4988 149.555 43.9468 149.555C46.438 149.555 47.9667 148.063 48.533 146.231C54.3363 147.391 60.1398 148.552 65.9432 149.713C71.5774 150.839 77.2116 151.966 82.8456 153.093C83.3471 155.036 84.8992 156.666 87.5021 156.666C93.9515 156.666 93.9515 146.666 87.5021 146.666C84.4084 146.666 82.799 148.968 82.674 151.363L82.0278 151.234C70.9459 149.017 59.8647 146.801 48.7828 144.585C48.7929 142.614 47.8008 140.637 45.8066 139.879C45.9279 139.315 46.0492 138.751 46.1704 138.187L46.4328 136.966C48.4667 127.504 50.5008 118.04 52.7118 108.617C58.3839 107.859 58.1289 98.6667 51.9468 98.6667C49.3894 98.6667 47.8463 100.24 47.3175 102.138C35.271 100.703 23.2802 98.8993 11.3904 96.492C11.786 93.7497 10.1937 90.6667 6.61347 90.6667C6.3492 90.6667 6.09577 90.6834 5.85316 90.7157C5.55451 85.5169 5.67753 80.313 5.80057 75.1081C5.90806 70.5611 6.01557 66.0134 5.84198 61.4678C8.41808 61.0009 9.69465 58.7404 9.6717 56.4958C23.7447 56.8863 37.814 57.6395 51.8703 58.4293C52.4834 60.1693 53.9903 61.5553 56.3908 61.5553Z" fill="white"/>
-      </svg>
-      <svg width="86" height="121" viewBox="0 0 86 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.52815 9.07175C7.7548 9.70995 6.72436 10.1087 5.43683 10.1087C-1.01117 10.1087 -1.01117 0.108673 5.43683 0.108673C9.87332 0.108673 11.2573 4.84269 9.58883 7.79632C20.6259 16.0233 31.4293 24.5772 42.1873 33.1679C42.9589 32.5368 43.9844 32.1432 45.2637 32.1432C51.7117 32.1432 51.7117 42.1432 45.2637 42.1432C44.9574 42.1432 44.6655 42.1206 44.3883 42.0776C41.349 50.5852 38.2578 59.0755 35.0917 67.5362L34.6091 68.8264C32.4709 74.5449 30.3299 80.271 27.949 85.8909C27.8441 86.139 27.7249 86.4792 27.5888 86.8713C28.4046 87.5502 28.932 88.4966 29.1711 89.5215C34.8247 88.9561 40.4781 88.3907 46.1316 87.8252C51.7372 87.2645 57.3429 86.7038 62.9487 86.1433C63.0926 83.7655 64.701 81.4941 67.7741 81.4941C72.9701 81.4941 73.979 87.9877 70.8009 90.5094C72.2433 94.82 74.2507 98.8896 76.2604 102.964L76.2605 102.964L76.2606 102.964L76.2606 102.964L76.2607 102.965C77.4362 105.348 78.6124 107.732 79.6768 110.167C80.0153 110.101 80.3767 110.065 80.761 110.065C87.209 110.065 87.209 120.065 80.761 120.065C75.3562 120.065 74.4818 113.039 78.1379 110.766C77.0558 108.277 75.855 105.843 74.655 103.412L74.6549 103.412L74.6548 103.411L74.6547 103.411L74.6546 103.411C72.6956 99.4415 70.739 95.4766 69.3047 91.282C68.8429 91.4191 68.3327 91.4941 67.7741 91.4941C65.1156 91.4941 63.5532 89.7942 63.0869 87.7961C57.6705 88.3377 52.2543 88.8795 46.838 89.4212L46.1316 89.4919L46.0591 89.4991C40.4758 90.0576 34.8925 90.616 29.3091 91.1743C29.165 93.5519 27.5565 95.8229 24.4837 95.8229C18.0357 95.8229 18.0357 85.8229 24.4837 85.8229C25.0691 85.8229 25.6014 85.9053 26.0805 86.0552C26.9708 83.9813 27.813 81.8865 28.637 79.7869C30.9383 73.9242 33.1517 68.0269 35.3317 62.1189C37.8586 55.2734 40.3544 48.4153 42.8125 41.5441C40.3646 40.174 39.8013 36.7517 41.1223 34.4369C30.3672 25.8471 19.5658 17.2936 8.52815 9.07175Z" fill="white"/>
-      </svg>
-      <svg width="139" height="55" viewBox="0 0 139 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.837 0C10.8014 0 11.2499 8.55278 6.18236 9.83891L12.5457 44.1555C12.5732 44.1552 12.6009 44.155 12.6286 44.155C14.4649 44.155 15.7783 44.9656 16.5689 46.1253C31.3401 34.3845 47.7734 24.4324 64.0871 14.9644C63.8861 12.3264 65.4929 9.5235 68.9073 9.5235C73.1233 9.5235 74.5832 13.7968 73.2872 16.7564C82.5509 27.0852 92.2927 36.9432 102.511 46.3291C103.144 44.6303 104.64 43.2904 107.001 43.2904C109.378 43.2904 110.878 44.6484 111.503 46.3636C112.649 45.621 113.798 44.8847 114.947 44.1485C120.032 40.8918 125.113 37.637 129.798 33.8442C127.964 30.9076 129.312 25.974 133.842 25.974C140.291 25.974 140.291 35.974 133.842 35.974C132.648 35.974 131.675 35.6312 130.923 35.0726C126.17 38.9239 121.016 42.2296 115.858 45.5379C114.515 46.3991 113.172 47.2605 111.836 48.1317C111.905 50.6835 110.294 53.2904 107.001 53.2904C103.768 53.2904 102.156 50.7778 102.164 48.2716C91.7247 38.7312 81.7804 28.7014 72.3301 18.1836C71.5293 18.9961 70.3884 19.5235 68.9073 19.5235C66.6286 19.5235 65.155 18.2751 64.4865 16.6604C48.2693 26.0765 31.9206 35.9812 17.2745 47.6837C18.0429 50.5622 16.4943 54.155 12.6286 54.155C6.81585 54.155 6.24212 46.0316 10.9074 44.428L6.31119 19.6411L4.52196 9.99187C-1.61057 9.6716 -1.50555 0 4.837 0Z" fill="white"/>
-      </svg>            
-      <h2 class="title">Skills</h2>
-      <div class="container-fluid wrap">
-        <div class="row">
-          <div class="col-sm pt-3">
-            <p class="pb-2"> I'm already experienced with:</p>
-            <label class="text-center px-1"><span class="icon-html5"></span><span class="d-block">HTML5</span></label>
-            <label class="text-center px-1"><span class="icon-css3"></span><span class="d-block">CSS3</span></label>
-            <label class="text-center px-1"><span class="icon-sass"></span><span class="d-block">Sass</span></label>
-            <label class="text-center px-1"><span class="icon-bootstrap"></span><span class="d-block">Bootstrap</span></label>
-            <label class="text-center px-1"><span class="icon-javascript"></span></i><span class="d-block">JavaScript</span></label>
-            <label class="text-center px-1"><span class="icon-jquery"></span></span></i><span class="d-block">JQuery</span></label>
-            <label class="text-center px-1"><span class="icon-windows"></span><span class="d-block">Windows</span></label>
-            <label class="text-center px-1"><span class="icon-ubuntu"></span><span class="d-block">Linux</span></label>
-            <label class="text-center px-1"><span class="icon-gulp"></span><span class="d-block">Gulp</span></label>
-            <label class="text-center px-1"><span class="icon-visualstudiocode"></span><span class="d-block">Visual Studio Code</span></label>
-            <label class="text-center px-1"><span class="icon-gimp"></span><span class="d-block">Gimp</span></label>
-            <label class="text-center px-1"><span class="icon-palette"></span><span class="d-block">MS Paint</span></label>
-            <label class="text-center px-1"><span class="icon-search"></span><span class="d-block">SEO</span></label>
-            <label class="text-center px-1"><img src="img/polish.png" alt="Flag of Poland"><span class="d-block">Polish</span></label>
-            <label class="text-center px-1"><img src="img/english.png" alt="Flag of UK"><span class="d-block">English</span></label>
-            <label class="text-center px-1"><span class="icon-tree"></span><span class="d-block">Nature</span></label>
+    <section class="home d-flex flex-row align-items-center justify-content-center w-100">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-6 position-relative">
+            <svg class="orbit d-block mx-auto position-relative" fill="#fff" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+              <path id="circlePath" d="M 200, 200 m -135, 0 a 135, 135 0 1, 1 270, 0 a 135, 135 0 1, 1 -270, 0" fill="transparent">
+                <animateTransform
+                attributeName="transform"
+                begin="0s"
+                dur="50s"
+                type="rotate"
+                from="0 200 200"
+                to="360 200 200"
+                repeatCount="indefinite" 
+                />
+              </path>
+              <text>
+                <textPath href="#circlePath" class="orbit-text" fill="white">Hello, earthlings!</textPath>
+              </text>
+            </svg>
+            <picture class="flex-grow-1">
+              <img class="planet d-block mx-auto position-absolute" src="img/planet.svg">
+            </picture>
           </div>
-          <div class="col-sm pt-3">
-            <p class="pb-2">I'm still exploring:</p>
-            <label class="text-center px-1"><span class="icon-github"></span><span class="d-block">GitHub</span></label>
-            <label class="text-center px-1"><span class="icon-vue-dot-js"></span></i><span class="d-block">Vue</span></label>
-            <label class="text-center px-1"><span class="icon-database"></span><span class="d-block">SQL</span></label>
-            <!-- <label class="text-center px-1"><span class="icon-react"></span><span class="d-block">React</span></label> -->
-            <label class="text-center px-1"><span class="icon-webpack"></span><span class="d-block">webpack</span></label>
-            <label class="text-center px-1"><span class="icon-npm"></span><span class="d-block">npm</span></label>
-            <label class="text-center px-1"><span class="icon-adobexd"></span><span class="d-block">Adobe XD</span></label>
-            <label class="text-center px-1"><span class="icon-paint-brush"></span><span class="d-block">Corel Painter</span></label>
-            <label class="text-center px-1"><img src="img/german.png" alt="Flag of Germany"><span class="d-block">German</span></label>
-            <label class="text-center px-1"><img src="img/spanish.png" alt="Flag of Spain"><span class="d-block">Spanish</span></label>
-          </div>
-        </div>
-        <div class="row justify-content-center pt-3">
-          <div class="col-sm-6 col-lg-4">
-            <p class="pb-2">Additionally, I can brighten up your world with:</p>
-            <label class="text-center px-1"><span class="icon-lightbulb-o"></span><span class="d-block">Creativity</span></label>
-            <label class="text-center px-1"><span class="icon-cogs"></span><span class="d-block">Logical thinking</span></label>
-            <label class="text-center px-1"><span class="icon-stats-dots"></span><span class="d-block">Infering</span></label>
-            <label class="text-center px-1"><span class="icon-question"></span><span class="d-block">Curiosity</span></label>
-            <label class="text-center px-1"><span class="icon-cookie"></span></i><span class="d-block">Baking</span></label>
-            <label class="text-center px-1"><span class="icon-smile2"></span><span class="d-block">Humor</span></label>
+          <div class="col-sm-6 order-sm-1 pl-2 pl-md-5 pt-5 pt-sm-0 text-light d-flex flex-column justify-content-center position-relative z-index-2"> 
+            <h1 class="d-none d-sm-block">The sky tells me<br>there are no limits</h1>
+            <p class="lead d-none d-sm-block">I go beyond the borders to improve my skills</p>
+            <button class="btn btn-large btn-custom"><a href="#portfolio">See my work</a></button>
           </div>
         </div>
       </div>
+      <svg class="wave w-100 position-absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F0F0F0" fill-opacity="1" d="M0,32L30,64C60,96,120,160,180,181.3C240,203,300,181,360,144C420,107,480,53,540,58.7C600,64,660,128,720,160C780,192,840,192,900,176C960,160,1020,128,1080,101.3C1140,75,1200,53,1260,80C1320,107,1380,181,1410,218.7L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>           
+      <!-- <svg class="wave w-100 position-absolute" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320"><path fill="#f0f0f0" fill-opacity="1" d="M0,0L16,16C32,32,64,64,96,80C128,96,160,96,192,90.7C224,85,256,75,288,96C320,117,352,171,384,170.7C416,171,448,117,480,112C512,107,544,149,576,154.7C608,160,640,128,672,149.3C704,171,736,245,768,245.3C800,245,832,171,864,122.7C896,75,928,53,960,80C992,107,1024,181,1056,213.3C1088,245,1120,235,1152,224C1184,213,1216,203,1248,208C1280,213,1312,235,1344,250.7C1376,267,1408,277,1424,282.7L1440,288L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg> -->
     </section>
-    <section class="folio position-relative">
-      <h2 class="title">Portfolio</h2>
-      <div class="container-fluid wrap">
-        <div class="container-fluid pt-3">
-          <div class="gallery">
-              <div class="gallery-elem">
-                <img src="img/folio/kasia2.png" alt="" class="img-fluid web">
-                <a href="https://github.com/codestance/kasia2">Code</a>
-                <a href="https://codestance.github.io/kasia2/">Live</a>
-              </div>
-              <div class="gallery-elem">
-                <img src="img/folio/RPSLS.png" alt="" class="img-fluid web">
-                <a href="https://github.com/codestance/RPSLS">Code</a>
-                <a href="https://codestance.github.io/RPSLS/">Live</a>
-              </div>
-              <div class="gallery-elem"><img src="img/folio/draw/k3.png" alt="" class="img-fluid draw float-right"></div>
-              <div class="gallery-elem">
-                <img src="img/folio/eunika.png" alt="" class="img-fluid web">
-                <a href="https://github.com/codestance/eunika">Code</a>
-                <a href="http://if.pwr.edu.pl/~zielony/">Live</a>
-              </div>
-              <div class="gallery-elem"><img src="img/folio/draw/p1.png" alt="" class="img-fluid draw float-left"></div>
-              <div class="gallery-elem">
-                <img src="img/folio/kasia.png" alt="" class="img-fluid web">
-                <a href="https://github.com/codestance/kasia">Code</a>
-                <a href="https://codestance.github.io/kasia/">Live</a>
-              </div>
-              <div class="gallery-elem"><img src="img/folio/draw/pug.png" alt="" class="img-fluid float-right draw float-left"></div>
-              <div class="gallery-elem">
-                <img src="img/folio/babies.png" alt="" class="img-fluid web">
-                <a href="https://github.com/codestance/babyNames">Code</a>
-                <a href="https://codestance.github.io/babyNames/">Live</a>
-              </div>
-              <div class="gallery-elem"><img src="img/folio/draw/k2.png" alt="" class="img-fluid draw float-right"></div>
-              <div class="gallery-elem">
-                <img src="img/folio/gridGallery.png" alt="" class="img-fluid web">
-                <a href="https://github.com/codestance/kasia2">Code</a>
-                <a href="http://if.pwr.edu.pl/~gwozdz/hobby.html">Live</a>
-              </div>
-              <div class="gallery-elem"><img src="img/folio/draw/panda2a.png" alt="" class="img-fluid draw"></div>
-              <div class="gallery-elem">
-                <img src="img/folio/furniture.png" alt="" class="img-fluid web">
-                <a href="https://github.com/codestance/furniture">Code</a>
-                <a href="https://codestance.github.io/furniture/">Live</a>
-              </div>
-              <div class="gallery-elem"><img src="img/folio/draw/p2.png" alt="" class="img-fluid draw"></div>
-              <div class="gallery-elem">
-                <img src="img/folio/ewa.png" alt="" class="img-fluid web">
-                <a href="https://github.com/codestance/prof">Code</a>
-                <a href="https://codestance.github.io/prof">Live</a>              
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="extras">
-      <svg class="wave2 w-100 position-absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f0f0f0" fill-opacity="1" d="M0,224L17.1,208C34.3,192,69,160,103,154.7C137.1,149,171,171,206,176C240,181,274,171,309,154.7C342.9,139,377,117,411,106.7C445.7,96,480,96,514,101.3C548.6,107,583,117,617,106.7C651.4,96,686,64,720,69.3C754.3,75,789,117,823,128C857.1,139,891,117,926,96C960,75,994,53,1029,69.3C1062.9,85,1097,139,1131,181.3C1165.7,224,1200,256,1234,229.3C1268.6,203,1303,117,1337,80C1371.4,43,1406,53,1423,58.7L1440,64L1440,0L1422.9,0C1405.7,0,1371,0,1337,0C1302.9,0,1269,0,1234,0C1200,0,1166,0,1131,0C1097.1,0,1063,0,1029,0C994.3,0,960,0,926,0C891.4,0,857,0,823,0C788.6,0,754,0,720,0C685.7,0,651,0,617,0C582.9,0,549,0,514,0C480,0,446,0,411,0C377.1,0,343,0,309,0C274.3,0,240,0,206,0C171.4,0,137,0,103,0C68.6,0,34,0,17,0L0,0Z"></path></svg>
-      <div class="container-fluid wrap">
-        <div class="row pt-5">          
-            <div class="col offset-6 pl-5">
-              <p>I have potential!</p>
-              <p>dV = -G Mm/r1 - GMm/r2</p>
+    <main class="position-relative">
+      <svg class="position-absolute w-100" viewBox="0 0 539 658" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.5" d="M430.319 0H427.319C404.319 2 355.556 11 351.319 35.5C347.543 57.332 350.029 53.1213 345.671 74.8613C341.885 93.7493 334.919 113.364 318.75 125.157C309.491 131.911 298.658 135.303 287.43 137.012C267.473 140.053 247.369 141.679 227.273 143.488C208.03 145.22 188.718 147.224 169.905 151.784C149.63 156.699 130.165 164.437 112.263 175.192C79.4528 194.905 50.2901 227.582 39.2128 264.66C33.5315 283.672 32.7075 303.641 37.3128 322.976C41.6141 341.038 49.3702 357.916 56.3262 375.052C62.9342 391.333 69.1182 408.371 69.6582 426.131C70.2088 444.229 65.0395 461.249 54.7795 476.139C45.0101 490.315 32.4635 502.185 21.8088 515.648C9.1555 531.639 1.36347 549.483 0.0634658 570.024C-1.89253 600.875 41.8186 621.408 68.3186 635.499L88.8186 643.5C150.819 663 182.319 668 182.319 617.999C182.164 598.573 181.251 582.414 179.618 563.066C178.021 544.182 176.51 525.273 175.966 506.323C175.383 485.979 175.279 465.404 179.422 445.385C182.909 428.543 188.759 412.144 197.117 397.091C213.834 366.98 239.867 342.284 271.615 328.588C287.979 321.53 305.541 316.743 323.45 316.676C342.278 316.607 360.838 320.364 379.078 324.702C415.502 333.362 455.939 346.669 492.794 332.776C510.942 325.934 524.934 313.197 531.879 294.893C538.158 278.349 539.325 260.245 538.078 242.721C534.734 195.791 498.751 178.24 515.319 107C525.319 63.9998 497.819 71.4998 489.319 49.5C478.819 9.99976 447.819 2.5 430.319 0Z" fill="#34154C"/>
+      </svg>
+        
+
+      <section class="self-ad position-relative">
+        <!-- <svg class="wave2 w-100 position-absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F0F0F0" fill-opacity="1" d="M0,32L30,64C60,96,120,160,180,181.3C240,203,300,181,360,144C420,107,480,53,540,58.7C600,64,660,128,720,160C780,192,840,192,900,176C960,160,1020,128,1080,101.3C1140,75,1200,53,1260,80C1320,107,1380,181,1410,218.7L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg> -->
+        <!-- <svg class="wave w-100 position-absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F0F0F0" fill-opacity="1" d="M0,96L30,112C60,128,120,160,180,181.3C240,203,300,213,360,186.7C420,160,480,96,540,96C600,96,660,160,720,165.3C780,171,840,117,900,112C960,107,1020,149,1080,186.7C1140,224,1200,256,1260,272C1320,288,1380,288,1410,288L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg> -->
+        <p class="text-center">If you are looking to build a website that is fast, beautiful and well visible in the search results, you have come to the right place.</p>
+        <p class="text-center text-uppercase">I'm going to make your websites out of this world!</p>
+      </section>
+      <section class="position-relative pt-5 skills">
+        <svg class="position-absolute" width="94" height="202" viewBox="0 0 94 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M43.6249 10.778C44.4063 10.778 45.0931 10.6312 45.6852 10.3731C51.8632 19.5305 58.0056 28.7251 63.8777 38.0804C60.8882 40.2229 61.2877 45.7257 65.0764 46.97C63.776 57.0361 62.5116 67.119 61.5553 77.2245C61.5051 77.2233 61.4545 77.2226 61.4035 77.2226C59.9804 77.2226 58.8713 77.7096 58.0762 78.4685C49.1112 71.2263 40.1469 63.9841 31.1827 56.742C32.3605 53.7907 30.8786 49.6667 26.7369 49.6667C26.306 49.6667 25.904 49.7113 25.5307 49.7946L24.8987 48.8715L24.8986 48.8714C21.9781 44.6057 19.0574 40.3399 16.2791 35.9812C14.9346 33.8725 13.7146 31.7055 12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421C11.3529 27.5104 10.2109 25.4819 8.96934 23.508C10.1469 22.1953 10.5063 20.2322 10.0477 18.5224C19.7862 15.0421 29.5 11.4947 39.1899 7.88034C39.8516 9.5117 41.3299 10.778 43.6249 10.778ZM66.7369 47.2226L66.7104 47.2226C65.4088 57.303 64.1457 67.4001 63.1941 77.5201C66.9777 78.8884 67.2369 84.5934 63.9719 86.556C66.9114 91.3624 69.8799 96.1511 72.8483 100.94C77.7163 108.793 82.5843 116.646 87.3247 124.577C87.8133 124.42 88.3578 124.333 88.9582 124.333C95.4075 124.333 95.4075 134.333 88.9582 134.333C88.7611 134.333 88.57 134.324 88.3849 134.306L82.5855 172.969C86.3674 175.169 85.529 182.333 80.0702 182.333C78.4689 182.333 77.2652 181.717 76.4591 180.79L48.3251 195.639C48.9586 198.476 47.3919 201.888 43.6249 201.888C37.1756 201.888 37.1756 191.888 43.6249 191.888C45.5763 191.888 46.9372 192.803 47.7077 194.08L75.6042 179.357C74.4638 176.41 75.9525 172.333 80.0702 172.333C80.3954 172.333 80.7043 172.359 80.9967 172.407L86.7767 133.873C83.574 132.362 83.2683 127.523 85.8596 125.376C81.119 117.445 76.2507 109.591 71.3823 101.738L71.381 101.736C68.3691 96.877 65.3573 92.0183 62.3756 87.1412C62.0697 87.1945 61.7457 87.2226 61.4035 87.2226C57.1038 87.2226 55.6707 82.7779 57.1041 79.8149L43.7769 69.0483L30.3088 58.1679C29.5031 59.0699 28.3124 59.6667 26.7369 59.6667C21.408 59.6667 20.4822 52.8394 23.9596 50.4672L23.4435 49.7189C20.92 46.0598 18.3958 42.3997 16.0084 38.6545C14.547 36.3637 13.2156 33.9968 11.8851 31.6313L11.885 31.6311L11.885 31.6311L11.8849 31.631L11.8849 31.631L11.8849 31.631L11.8849 31.631L11.8849 31.631L11.8849 31.6309C10.5299 29.2221 9.17585 26.8148 7.68613 24.4908C7.04569 24.8133 6.28482 25 5.40353 25C-1.0458 25 -1.0458 15 5.40353 15C7.25621 15 8.57668 15.8252 9.36493 17.0016C19.2039 13.4866 29.0178 9.90315 38.8072 6.25131C38.5906 3.60394 40.1965 0.777985 43.6249 0.777985C48.5881 0.777985 49.7318 6.70035 47.0559 9.42974C53.2874 18.6669 59.4843 27.9414 65.4058 37.3801C65.8139 37.2779 66.2576 37.2226 66.7369 37.2226C73.1862 37.2226 73.1862 47.2226 66.7369 47.2226Z" fill="white"/>
+        </svg>
+        <svg class="position-absolute" width="86" height="121" viewBox="0 0 86 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.52815 9.07175C7.7548 9.70995 6.72436 10.1087 5.43683 10.1087C-1.01117 10.1087 -1.01117 0.108673 5.43683 0.108673C9.87332 0.108673 11.2573 4.84269 9.58883 7.79632C20.6259 16.0233 31.4293 24.5772 42.1873 33.1679C42.9589 32.5368 43.9844 32.1432 45.2637 32.1432C51.7117 32.1432 51.7117 42.1432 45.2637 42.1432C44.9574 42.1432 44.6655 42.1206 44.3883 42.0776C41.349 50.5852 38.2578 59.0755 35.0917 67.5362L34.6091 68.8264C32.4709 74.5449 30.3299 80.271 27.949 85.8909C27.8441 86.139 27.7249 86.4792 27.5888 86.8713C28.4046 87.5502 28.932 88.4966 29.1711 89.5215C34.8247 88.9561 40.4781 88.3907 46.1316 87.8252C51.7372 87.2645 57.3429 86.7038 62.9487 86.1433C63.0926 83.7655 64.701 81.4941 67.7741 81.4941C72.9701 81.4941 73.979 87.9877 70.8009 90.5094C72.2433 94.82 74.2507 98.8896 76.2604 102.964L76.2605 102.964L76.2606 102.964L76.2606 102.964L76.2607 102.965C77.4362 105.348 78.6124 107.732 79.6768 110.167C80.0153 110.101 80.3767 110.065 80.761 110.065C87.209 110.065 87.209 120.065 80.761 120.065C75.3562 120.065 74.4818 113.039 78.1379 110.766C77.0558 108.277 75.855 105.843 74.655 103.412L74.6549 103.412L74.6548 103.411L74.6547 103.411L74.6546 103.411C72.6956 99.4415 70.739 95.4766 69.3047 91.282C68.8429 91.4191 68.3327 91.4941 67.7741 91.4941C65.1156 91.4941 63.5532 89.7942 63.0869 87.7961C57.6705 88.3377 52.2543 88.8795 46.838 89.4212L46.1316 89.4919L46.0591 89.4991C40.4758 90.0576 34.8925 90.616 29.3091 91.1743C29.165 93.5519 27.5565 95.8229 24.4837 95.8229C18.0357 95.8229 18.0357 85.8229 24.4837 85.8229C25.0691 85.8229 25.6014 85.9053 26.0805 86.0552C26.9708 83.9813 27.813 81.8865 28.637 79.7869C30.9383 73.9242 33.1517 68.0269 35.3317 62.1189C37.8586 55.2734 40.3544 48.4153 42.8125 41.5441C40.3646 40.174 39.8013 36.7517 41.1223 34.4369C30.3672 25.8471 19.5658 17.2936 8.52815 9.07175Z" fill="white"/>
+        </svg>
+        <svg class="w-100 position-absolute wave2" viewBox="0 0 1440 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V74L48 58C96 42 192 10 288 20.7C333.256 25.5555 378.511 40.1226 423.767 54.6896C474.511 71.0233 525.256 87.3571 576 90C624 92.5 672 83.25 720 74C768 64.75 816 55.5 864 58C917.883 60.8064 971.766 79.0497 1025.65 97.293C1067.77 111.552 1109.88 125.812 1152 132.7C1244.72 148.444 1337.45 128.457 1386.92 117.794C1388.67 117.417 1390.36 117.052 1392 116.7L1440 106V0H0Z" fill="#F0F0F0"/>
+          </svg>
+          
+        <!-- <svg class="w-100 position-absolute wave2" viewBox="0 0 1440 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V88L30 109.3C60 131 120 173 180 189.3C240 205 300 195 360 146.7C377.677 132.647 395.354 115.269 413.031 97.8918C455.354 56.2856 497.677 14.6793 540 18.7C570.92 21.4313 601.841 48.2504 632.761 75.0695C661.841 100.292 690.92 125.514 720 130.7C753.146 136.39 786.291 116.354 819.437 96.3178C846.291 80.0845 873.146 63.8512 900 61.3C935.448 58.1688 970.895 79.2258 1006.34 100.283C1030.9 114.868 1055.45 129.453 1080 136C1113.76 145.004 1147.53 138.808 1181.29 132.612C1207.53 127.797 1233.76 122.982 1260 125.3C1320 131 1380 173 1410 194.7L1440 216V0H0Z" fill="#F0F0F0"/>
+          </svg> -->
+          
+        <!-- <svg class="w-100 position-absolute wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F0F0F0" fill-opacity="1" d="M0,192L30,213.3C60,235,120,277,180,293.3C240,309,300,299,360,250.7C420,203,480,117,540,122.7C600,128,660,224,720,234.7C780,245,840,171,900,165.3C960,160,1020,224,1080,240C1140,256,1200,224,1260,229.3C1320,235,1380,277,1410,298.7L1440,320L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg> -->
+
+        <h2 class="title">Skills</h2>
+        <div class="container-fluid text-light">
+          <div class="row">
+            <div class="col-sm pt-5">
+              <p class="pb-2"> I'm already experienced with:</p>
+              <label class="text-center px-1"><span class="icon-html5"></span><span class="d-block">HTML5</span></label>
+              <label class="text-center px-1"><span class="icon-css3"></span><span class="d-block">CSS3</span></label>
+              <label class="text-center px-1"><span class="icon-sass"></span><span class="d-block">Sass</span></label>
+              <label class="text-center px-1"><span class="icon-bootstrap"></span><span class="d-block">Bootstrap</span></label>
+              <label class="text-center px-1"><span class="icon-javascript"></span></i><span class="d-block">JavaScript</span></label>
+              <label class="text-center px-1"><span class="icon-jquery"></span></span></i><span class="d-block">JQuery</span></label>
+              <label class="text-center px-1"><span class="icon-windows"></span><span class="d-block">Windows</span></label>
+              <label class="text-center px-1"><span class="icon-ubuntu"></span><span class="d-block">Linux</span></label>
+              <label class="text-center px-1"><span class="icon-gulp"></span><span class="d-block">Gulp</span></label>
+              <label class="text-center px-1"><span class="icon-visualstudiocode"></span><span class="d-block">Visual Studio Code</span></label>
+              <label class="text-center px-1"><span class="icon-gimp"></span><span class="d-block">Gimp</span></label>
+              <label class="text-center px-1"><span class="icon-palette"></span><span class="d-block">MS Paint</span></label>
+              <label class="text-center px-1"><span class="icon-search"></span><span class="d-block">SEO</span></label>
+              <label class="text-center px-1"><img src="img/polish.png" alt="Flag of Poland"><span class="d-block">Polish</span></label>
+              <label class="text-center px-1"><img src="img/english.png" alt="Flag of UK"><span class="d-block">English</span></label>
+              <!-- <label class="text-center px-1"><span class="icon-tree"></span><span class="d-block">Nature</span></label> -->
             </div>
-          <div class="moon text-center"><img src="img/moon.svg" class="img-fluid"></div>
-          <div class="col offset-sm-6 offset-md-8">
+            <div class="col-sm pt-3">
+              <p class="pb-2">I'm still exploring:</p>
+              <label class="text-center px-1"><span class="icon-github"></span><span class="d-block">GitHub</span></label>
+              <label class="text-center px-1"><span class="icon-vue-dot-js"></span></i><span class="d-block">Vue</span></label>
+              <label class="text-center px-1"><span class="icon-database"></span><span class="d-block">SQL</span></label>
+              <!-- <label class="text-center px-1"><span class="icon-react"></span><span class="d-block">React</span></label> -->
+              <label class="text-center px-1"><span class="icon-webpack"></span><span class="d-block">webpack</span></label>
+              <label class="text-center px-1"><span class="icon-npm"></span><span class="d-block">npm</span></label>
+              <label class="text-center px-1"><span class="icon-adobexd"></span><span class="d-block">Adobe XD</span></label>
+              <label class="text-center px-1"><span class="icon-paint-brush"></span><span class="d-block">Corel Painter</span></label>
+              <label class="text-center px-1"><img src="img/german.png" alt="Flag of Germany"><span class="d-block">German</span></label>
+              <label class="text-center px-1"><img src="img/spanish.png" alt="Flag of Spain"><span class="d-block">Spanish</span></label>
+            </div>
+          </div>
+          <div class="row justify-content-center pt-3">
+            <div class="col-sm-6 col-lg-4">
+              <p class="pb-2">Additionally, I can brighten up your world with:</p>
+              <label class="text-center px-1"><span class="icon-lightbulb-o"></span><span class="d-block">Creativity</span></label>
+              <label class="text-center px-1"><span class="icon-cogs"></span><span class="d-block">Logical thinking</span></label>
+              <label class="text-center px-1"><span class="icon-stats-dots"></span><span class="d-block">Infering</span></label>
+              <label class="text-center px-1"><span class="icon-question"></span><span class="d-block">Curiosity</span></label>
+              <label class="text-center px-1"><span class="icon-cookie"></span></i><span class="d-block">Baking</span></label>
+              <label class="text-center px-1"><span class="icon-smile2"></span><span class="d-block">Humor</span></label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="folio position-relative" id="portfolio">
+        <svg class="position-absolute" width="106" height="157" viewBox="0 0 106 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M99.1461 9.99936L99.1131 9.99975L99.0568 10C96.6562 10 95.1491 8.61438 94.5357 6.8747C79.5601 11.0032 64.5845 15.1308 49.6089 19.2583C49.9391 21.4708 48.9732 23.9129 46.7112 24.7821C49.502 33.7822 51.9941 42.8607 54.1892 52.0249C54.8125 51.7268 55.5464 51.5553 56.3908 51.5553C58.6767 51.5553 60.1522 52.8121 60.8173 54.4346C65.5196 52.9111 70.1427 51.1541 74.7639 49.3979C81.7746 46.7334 88.7808 44.0707 96.0517 42.2281C95.7049 39.692 97.0544 36.8802 100.1 36.4904C100.077 34.2937 100.095 32.0892 100.112 29.8829V29.8828C100.166 23.2166 100.22 16.534 99.1461 9.99936ZM56.3908 61.5553C59.8285 61.5553 61.4334 58.713 61.2056 56.059C65.9277 54.5312 70.5695 52.7671 75.2091 51.0038C82.2286 48.336 89.2433 45.67 96.524 43.8272C97.2366 45.3211 98.6738 46.4447 100.836 46.4447C106.958 46.4447 107.268 37.4312 101.765 36.5189C101.739 34.2882 101.755 32.0502 101.771 29.8109V29.8104V29.81V29.8096V29.8091V29.8087V29.8083V29.8078V29.8074C101.819 23.0746 101.866 16.3286 100.787 9.72384C105.443 8.11286 104.866 0 99.0568 0C95.7326 0 94.1218 2.65682 94.2245 5.23158C86.5459 7.34798 78.8673 9.46461 71.1887 11.5812L71.1694 11.5866L71.1588 11.5895C63.8112 13.6149 56.4635 15.6403 49.1159 17.6655C48.3933 16.2033 46.9667 15.1113 44.836 15.1113C38.388 15.1113 38.388 25.1113 44.836 25.1113C44.9141 25.1113 44.9913 25.1099 45.0675 25.107C47.9409 34.3664 50.4988 43.7094 52.7431 53.1421C51.9105 54.1245 51.5154 55.4434 51.5579 56.7451C37.5164 55.9567 23.4619 55.2072 9.40381 54.8218C8.82338 53.0165 7.30077 51.5553 4.836 51.5553C-1.38438 51.5553 -1.60396 60.8618 4.17725 61.5188C4.3481 66.0474 4.24099 70.5781 4.1339 75.1081C4.00676 80.4863 3.87965 85.8636 4.21775 91.2351C0.3007 93.3533 1.09927 100.667 6.61347 100.667C8.75508 100.667 10.1854 99.5635 10.9044 98.09C22.8866 100.518 34.9723 102.334 47.112 103.781C47.1553 105.986 48.4538 108.162 51.0074 108.591C48.8207 117.933 46.8048 127.313 44.7889 136.694C44.5836 137.649 44.3783 138.604 44.1729 139.559C44.0984 139.557 44.0231 139.555 43.9468 139.555C37.4988 139.555 37.4988 149.555 43.9468 149.555C46.438 149.555 47.9667 148.063 48.533 146.231C54.3363 147.391 60.1398 148.552 65.9432 149.713C71.5774 150.839 77.2116 151.966 82.8456 153.093C83.3471 155.036 84.8992 156.666 87.5021 156.666C93.9515 156.666 93.9515 146.666 87.5021 146.666C84.4084 146.666 82.799 148.968 82.674 151.363L82.0278 151.234C70.9459 149.017 59.8647 146.801 48.7828 144.585C48.7929 142.614 47.8008 140.637 45.8066 139.879C45.9279 139.315 46.0492 138.751 46.1704 138.187L46.4328 136.966C48.4667 127.504 50.5008 118.04 52.7118 108.617C58.3839 107.859 58.1289 98.6667 51.9468 98.6667C49.3894 98.6667 47.8463 100.24 47.3175 102.138C35.271 100.703 23.2802 98.8993 11.3904 96.492C11.786 93.7497 10.1937 90.6667 6.61347 90.6667C6.3492 90.6667 6.09577 90.6834 5.85316 90.7157C5.55451 85.5169 5.67753 80.313 5.80057 75.1081C5.90806 70.5611 6.01557 66.0134 5.84198 61.4678C8.41808 61.0009 9.69465 58.7404 9.6717 56.4958C23.7447 56.8863 37.814 57.6395 51.8703 58.4293C52.4834 60.1693 53.9903 61.5553 56.3908 61.5553Z" fill="white"/>
+        </svg>
+        <svg class="position-absolute" width="139" height="55" viewBox="0 0 139 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.837 0C10.8014 0 11.2499 8.55278 6.18236 9.83891L12.5457 44.1555C12.5732 44.1552 12.6009 44.155 12.6286 44.155C14.4649 44.155 15.7783 44.9656 16.5689 46.1253C31.3401 34.3845 47.7734 24.4324 64.0871 14.9644C63.8861 12.3264 65.4929 9.5235 68.9073 9.5235C73.1233 9.5235 74.5832 13.7968 73.2872 16.7564C82.5509 27.0852 92.2927 36.9432 102.511 46.3291C103.144 44.6303 104.64 43.2904 107.001 43.2904C109.378 43.2904 110.878 44.6484 111.503 46.3636C112.649 45.621 113.798 44.8847 114.947 44.1485C120.032 40.8918 125.113 37.637 129.798 33.8442C127.964 30.9076 129.312 25.974 133.842 25.974C140.291 25.974 140.291 35.974 133.842 35.974C132.648 35.974 131.675 35.6312 130.923 35.0726C126.17 38.9239 121.016 42.2296 115.858 45.5379C114.515 46.3991 113.172 47.2605 111.836 48.1317C111.905 50.6835 110.294 53.2904 107.001 53.2904C103.768 53.2904 102.156 50.7778 102.164 48.2716C91.7247 38.7312 81.7804 28.7014 72.3301 18.1836C71.5293 18.9961 70.3884 19.5235 68.9073 19.5235C66.6286 19.5235 65.155 18.2751 64.4865 16.6604C48.2693 26.0765 31.9206 35.9812 17.2745 47.6837C18.0429 50.5622 16.4943 54.155 12.6286 54.155C6.81585 54.155 6.24212 46.0316 10.9074 44.428L6.31119 19.6411L4.52196 9.99187C-1.61057 9.6716 -1.50555 0 4.837 0Z" fill="white"/>
+        </svg>
+        <svg class="position-absolute" width="94" height="202" viewBox="0 0 94 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M43.6249 10.778C44.4063 10.778 45.0931 10.6312 45.6852 10.3731C51.8632 19.5305 58.0056 28.7251 63.8777 38.0804C60.8882 40.2229 61.2877 45.7257 65.0764 46.97C63.776 57.0361 62.5116 67.119 61.5553 77.2245C61.5051 77.2233 61.4545 77.2226 61.4035 77.2226C59.9804 77.2226 58.8713 77.7096 58.0762 78.4685C49.1112 71.2263 40.1469 63.9841 31.1827 56.742C32.3605 53.7907 30.8786 49.6667 26.7369 49.6667C26.306 49.6667 25.904 49.7113 25.5307 49.7946L24.8987 48.8715L24.8986 48.8714C21.9781 44.6057 19.0574 40.3399 16.2791 35.9812C14.9346 33.8725 13.7146 31.7055 12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421L12.4967 29.5421C11.3529 27.5104 10.2109 25.4819 8.96934 23.508C10.1469 22.1953 10.5063 20.2322 10.0477 18.5224C19.7862 15.0421 29.5 11.4947 39.1899 7.88034C39.8516 9.5117 41.3299 10.778 43.6249 10.778ZM66.7369 47.2226L66.7104 47.2226C65.4088 57.303 64.1457 67.4001 63.1941 77.5201C66.9777 78.8884 67.2369 84.5934 63.9719 86.556C66.9114 91.3624 69.8799 96.1511 72.8483 100.94C77.7163 108.793 82.5843 116.646 87.3247 124.577C87.8133 124.42 88.3578 124.333 88.9582 124.333C95.4075 124.333 95.4075 134.333 88.9582 134.333C88.7611 134.333 88.57 134.324 88.3849 134.306L82.5855 172.969C86.3674 175.169 85.529 182.333 80.0702 182.333C78.4689 182.333 77.2652 181.717 76.4591 180.79L48.3251 195.639C48.9586 198.476 47.3919 201.888 43.6249 201.888C37.1756 201.888 37.1756 191.888 43.6249 191.888C45.5763 191.888 46.9372 192.803 47.7077 194.08L75.6042 179.357C74.4638 176.41 75.9525 172.333 80.0702 172.333C80.3954 172.333 80.7043 172.359 80.9967 172.407L86.7767 133.873C83.574 132.362 83.2683 127.523 85.8596 125.376C81.119 117.445 76.2507 109.591 71.3823 101.738L71.381 101.736C68.3691 96.877 65.3573 92.0183 62.3756 87.1412C62.0697 87.1945 61.7457 87.2226 61.4035 87.2226C57.1038 87.2226 55.6707 82.7779 57.1041 79.8149L43.7769 69.0483L30.3088 58.1679C29.5031 59.0699 28.3124 59.6667 26.7369 59.6667C21.408 59.6667 20.4822 52.8394 23.9596 50.4672L23.4435 49.7189C20.92 46.0598 18.3958 42.3997 16.0084 38.6545C14.547 36.3637 13.2156 33.9968 11.8851 31.6313L11.885 31.6311L11.885 31.6311L11.8849 31.631L11.8849 31.631L11.8849 31.631L11.8849 31.631L11.8849 31.631L11.8849 31.6309C10.5299 29.2221 9.17585 26.8148 7.68613 24.4908C7.04569 24.8133 6.28482 25 5.40353 25C-1.0458 25 -1.0458 15 5.40353 15C7.25621 15 8.57668 15.8252 9.36493 17.0016C19.2039 13.4866 29.0178 9.90315 38.8072 6.25131C38.5906 3.60394 40.1965 0.777985 43.6249 0.777985C48.5881 0.777985 49.7318 6.70035 47.0559 9.42974C53.2874 18.6669 59.4843 27.9414 65.4058 37.3801C65.8139 37.2779 66.2576 37.2226 66.7369 37.2226C73.1862 37.2226 73.1862 47.2226 66.7369 47.2226Z" fill="white"/>
+        </svg> 
+        <h2 class="title">Portfolio</h2>
+        <div class="container-fluid wrap">
+          <div class="container-fluid pt-3">
+            <div class="gallery">
+                <div class="gallery-elem">
+                  <img src="img/folio/kasia2.png" alt="" class="img-fluid web" usemap="#kasia">
+                  <map name="kasia">
+                    <area shape="default" href="/kasia.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/RPSLS.png" alt="" class="img-fluid web" usemap="#rpsls">
+                  <map name="rpsls">
+                    <area shape="default" href="/rpsls.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/draw/k3.png" alt="" class="img-fluid draw float-right" usemap="#animals">
+                  <map name="animals">
+                    <area shape="default" href="/animals.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/eunika.png" alt="" class="img-fluid web" usemap="#eunika">
+                  <map name="eunika">
+                    <area shape="default" href="/eunika.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/draw/p1.png" alt="" class="img-fluid draw float-left" usemap="#wine">
+                  <map name="wine">
+                    <area shape="default" href="/wine.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/kasia.png" alt="" class="img-fluid web" usemap="#kasia">
+                  <map name="kasia">
+                    <area shape="default" href="/kasia.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/draw/pug.png" alt="" class="img-fluid float-right draw float-left" usemap="#animals">
+                  <map name="animals">
+                    <area shape="default" href="/animals.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/babies.png" alt="" class="img-fluid web" usemap="#babies">
+                  <map name="babies">
+                    <area shape="default" href="/babies.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/draw/k2.png" alt="" class="img-fluid draw float-right" usemap="#animals">
+                  <map name="animals">
+                    <area shape="default" href="/animals.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/gridGallery.png" alt="" class="img-fluid web" usemap="#kasia">
+                  <map name="kasia">
+                    <area shape="default" href="/kasia.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/draw/panda2a.png" alt="" class="img-fluid draw" usemap="#animals">
+                  <map name="animals">
+                    <area shape="default" href="/animals.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/furniture.png" alt="" class="img-fluid web" usemap="#furniture">
+                  <map name="furniture">
+                    <area shape="default" href="/furniture.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/draw/p2.png" alt="" class="img-fluid draw" usemap="wine">
+                  <map name="wine">
+                    <area shape="default" href="/wine.html">
+                  </map>
+                </div>
+                <div class="gallery-elem">
+                  <img src="img/folio/ewa.png" alt="" class="img-fluid web" usemap="#ewa">
+                  <map name="ewa">
+                    <area shape="default" href="/ewa.html">
+                  </map>             
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="contact">
+      <!-- <svg class="wave2 w-100 position-absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f0f0f0" fill-opacity="1" d="M0,224L17.1,208C34.3,192,69,160,103,154.7C137.1,149,171,171,206,176C240,181,274,171,309,154.7C342.9,139,377,117,411,106.7C445.7,96,480,96,514,101.3C548.6,107,583,117,617,106.7C651.4,96,686,64,720,69.3C754.3,75,789,117,823,128C857.1,139,891,117,926,96C960,75,994,53,1029,69.3C1062.9,85,1097,139,1131,181.3C1165.7,224,1200,256,1234,229.3C1268.6,203,1303,117,1337,80C1371.4,43,1406,53,1423,58.7L1440,64L1440,0L1422.9,0C1405.7,0,1371,0,1337,0C1302.9,0,1269,0,1234,0C1200,0,1166,0,1131,0C1097.1,0,1063,0,1029,0C994.3,0,960,0,926,0C891.4,0,857,0,823,0C788.6,0,754,0,720,0C685.7,0,651,0,617,0C582.9,0,549,0,514,0C480,0,446,0,411,0C377.1,0,343,0,309,0C274.3,0,240,0,206,0C171.4,0,137,0,103,0C68.6,0,34,0,17,0L0,0Z"></path></svg> -->
+      <svg class="wave2 w-100 position-absolute" viewBox="0 0 1441 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.100037 224.5L17.2 208.5C34.4 192.5 71.6 84.8 105.6 79.5C139.7 73.8 189.5 137.5 201.5 145.5C221.787 159.025 274.1 171.5 309.1 155.2C343 139.5 377.1 117.5 411.1 107.2C445.8 96.5 480.1 96.5 514.1 101.8C548.7 107.5 583.1 117.5 617.1 107.2C651.5 96.5 686.1 64.5 720.1 69.8C754.4 75.5 789.1 117.5 823.1 128.5C857.2 139.5 891.1 117.5 926.1 96.5C960.1 75.5 994.1 53.5 1029.1 69.8C1063 85.5 1106.1 132.7 1140.1 175C1174.8 217.7 1217.1 215.7 1251.1 189C1273.1 171.724 1303.1 117.5 1337.1 80.5C1371.5 43.5 1402.1 53 1418.6 67.5L1440.1 87.5V0.5H1423C1405.8 0.5 1371.1 0.5 1337.1 0.5C1303 0.5 1269.1 0.5 1234.1 0.5C1200.1 0.5 1166.1 0.5 1131.1 0.5C1097.2 0.5 1063.1 0.5 1029.1 0.5C994.4 0.5 960.1 0.5 926.1 0.5C891.5 0.5 857.1 0.5 823.1 0.5C788.7 0.5 754.1 0.5 720.1 0.5C685.8 0.5 651.1 0.5 617.1 0.5C583 0.5 549.1 0.5 514.1 0.5C480.1 0.5 446.1 0.5 411.1 0.5C377.2 0.5 343.1 0.5 309.1 0.5C274.4 0.5 240.1 0.5 206.1 0.5C171.5 0.5 137.1 0.5 103.1 0.5C68.7 0.5 34.1 0.5 17.1 0.5H0.100037V224.5Z" fill="#F0F0F0"/>
+        </svg>
+        
+      <div class="container-fluid pt-5 pb-3">
+        <div class="row pt-5">          
+          <div class="col-sm col-md-6 pt-5">
+            <img src="img/moon.svg" class="moon img-fluid">
+            <div class="potential">
+              <p>I have potential!
+              <br>
+              &Delta;V = -GMm [ 1/r<sub>1</sub> - 1&#47;r<sub>2</sub> ]</p>
+            </div>
+          </div>
+          <div class="col-sm col-md-6 pt-5">
             <form method="POST" action="http://formspree.io/skrzynska.konstancja@gmail.com">
-              <div class="form-group">
-                <input class="form-control" type="email" name="_replyto" placeholder="your@email.com" required>
+              <div class="form-group pb-1">
+                <input class="form-control" type="email" name="_replyto" placeholder="your@email.com" pattern="/\S+@\S+\.\S+/" required>
               </div>
-              <div class="form-group">
+              <div class="form-group pb-1">
                 <textarea class="form-control" name="body" rows="3" placeholder="Your message"></textarea>
               </div>
-              <button type="submit" tabindex="3" title="Send the message" class="btn btn-large">Let's expand the universe!</button>
+              <button type="submit" tabindex="3" title="Send the message" class="btn btn-large btn-custom">Let's expand the universe!</button>
             </form>
           </div>
         </div>        
