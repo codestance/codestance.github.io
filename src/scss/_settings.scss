@@ -1,9 +1,20 @@
 @import 'variables';
-@import url('https://fonts.googleapis.com/css?family=Raleway:200i&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
-
+// @import url('https://fonts.googleapis.com/css?family=Raleway:200i&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Open+Sans&display=swap');
+html{
+  font-size: 16px;
+  max-width: $max;
+  @media(min-width: $large){
+    font-size: 18px;
+  }
+}
+html,body{
+  margin: 0;
+  padding: 0;
+}
 body{
-  font-family: Raleway, sans-serif;
+  font-family: Open Sans, sans-serif;
 }
 section{
   position: relative;
@@ -19,7 +30,7 @@ p{
 }
 label{
   span{
-    color: $primary;
+    color: white;
     font-size: .75rem;
   }
 }
