@@ -32,6 +32,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media(min-width: 768px){
+  [class^="icon-"], [class*="icon-"]{
+    font-size: 2.5rem;
+  }
+}
+@media(min-width: 1000px){
+  [class^="icon-"], [class*="icon-"]{
+    font-size: 3rem;
+  }
+}
 .icon-cogs:before {
   content: "\f085";
   color: silver;
@@ -72,7 +82,7 @@
 }
 .icon-bootstrap:before {
   content: "\e907";
-  color: #563d7c;
+  color: #7961a8;
 }
 .icon-css3:before {
   content: "\e908";
@@ -80,7 +90,7 @@
 }
 .icon-gimp:before {
   content: "\e909";
-  color: #5c5543;
+  color: #848484;
 }
 .icon-github:before {
   content: "\e90a";
