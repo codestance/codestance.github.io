@@ -60,10 +60,10 @@ let moon = {
     y: $('.moon').offset().top + $('.moon').height()/2,
     x: $('.moon').offset().left + $('.moon').width()/2 -  $('.astronaut').width()/2
 }
-// console.log('document height', $(document).height())
+console.log('document height', $(document).height())
 let routeX = Math.abs(moon.x - astronaut.x);
 let routeY = Math.abs(moon.y- astronaut.y);
-// console.log('astronaut: ', astronaut, 'moon: ', moon)
+console.log('astronaut: ', astronaut, 'moon: ', moon)
 function flyAstronaut(){
     const initFoot = astronaut.y + $('.astronaut').height();
     let angle = 0;
@@ -74,10 +74,10 @@ function flyAstronaut(){
             stepY = moon.y/ routeY * $(window).scrollTop()
             stepX = foot/routeY * routeX;
             foot = stepY + initFoot;
-            // console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
+            console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
         } else {
             $('.potential-typing').addClass('typing');
-            // console.log('koniec')
+            console.log('koniec')
             return;
         }
         $('.astronaut').css('transform', 'translate('+stepX +'px,'+ stepY + 'px) rotate(' + angle + 'deg)');

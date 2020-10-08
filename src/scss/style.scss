@@ -59,51 +59,6 @@ $astronautWidth: 62px;
   z-index: 2000;
   opacity: 0;
 }
-.gallery{
-  .gallery-elem{
-    position: relative;
-    text-align: center;
-    padding: 1em 1em 2em 1em;
-    overflow: hidden;
-    z-index: 3;
-    cursor: pointer;
-    a{
-      padding: 0 .5em;
-    }
-  }
-  @media screen and (min-width: $small){
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .5em;
-    .gallery-elem{
-      display: table-cell;
-      img{
-        max-height: none;
-      }
-    }
-    .gallery-elem:nth-child(6),
-    .gallery-elem:nth-child(2),
-    .gallery-elem:nth-child(11),
-    .gallery-elem:nth-child(13)
-    {
-      grid-row: span 2;
-      vertical-align: middle;
-    }
-    
-  }
-  @media screen and (min-width: $medium){
-    grid-template-columns: repeat(3, 1fr);
-    gap: .5em;
-    .gallery-elem:nth-child(6),
-    .gallery-elem:nth-child(2),
-    .gallery-elem:nth-child(11),
-    .gallery-elem:nth-child(13)
-    {
-      grid-row: span 2;
-    }
-  }
-}
-
 .wave-bottom{
     bottom: -1px;
     left: 0;
@@ -113,13 +68,11 @@ $astronautWidth: 62px;
   left: 0;
 }
 .self-ad{
+  color: $primary;
   p:nth-child(2){
     font-family: Coiny;
     font-size: 1.5em;
   }
-  // color: #D78EB3;  
-  // color: #081C5B;
-  color: $primary;
 }
 .skills{
   background: $primary;
