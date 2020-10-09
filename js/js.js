@@ -1,47 +1,10 @@
 $(document).ready(function(){
-    // $('.menu-button').on('click', function(){
-    //     $(':nth-child(3)',this).toggleClass('open');
-    // });
-    // $('.nav-link').on('click',function(){
-    //     $('.navbar-collapse').collapse('hide');
-    //     $('.menu-button').children(2).removeClass('open');
-    // });
     createCanvas();
     flyAstronaut();
     setInterval(shine,1000);
-    // $(window).on('scroll', Astronaut);
     $(window).on('resize', createCanvas);
     $(window).on('resize', flyAstronaut)
 });
-// class Point{
-//     constructor(o){
-//         this.x=o.offset().left;
-//         this.y=o.offset().top + o.height();
-//     }
-//     get newLocation(){
-//         return this.newLocation();
-//     }
-//     newLocation(stepX, stepY, angle){
-//         this.stepY = stepY;
-//         // this.css('transform', 'translate('+stepX +'px,'+ stepY + 'px) rotate(' + angle + 'deg)');
-//         return {x:stepX, y: this.stepY};
-//     }
-//     howFar(){
-//         return this.stepY - this.y;
-//     }
-// } 
-// let astronaut = new Point($('.astronaut'));
-// let moon = new Point($('.moon'));
-// let routeX = -Math.abs(moon.x - astronaut.x);
-// let routeY = Math.abs(moon.y- astronaut.y);
-// let stepY = $(window).scrollTop();
-// let stepX = stepY/routeY * routeX;
-// let angle = (astronaut.howFar() - astronaut.y) / routeY * 360;
-
-// while(astronaut.howFar()<0){
-//     astronaut.newLocation(stepX, stepY, angle);
-// }
-
 let planet = {
     y: $('.planet').offset().top,
     x: $('.planet').offset().left + $('.planet').width()/2
@@ -60,10 +23,10 @@ let moon = {
     y: $('.moon').offset().top + $('.moon').height()/2,
     x: $('.moon').offset().left + $('.moon').width()/2 -  $('.astronaut').width()/2
 }
-console.log('document height', $(document).height())
+// console.log('document height', $(document).height())
 let routeX = Math.abs(moon.x - astronaut.x);
 let routeY = Math.abs(moon.y- astronaut.y);
-console.log('astronaut: ', astronaut, 'moon: ', moon)
+// console.log('astronaut: ', astronaut, 'moon: ', moon)
 function flyAstronaut(){
     const initFoot = astronaut.y + $('.astronaut').height();
     let angle = 0;
@@ -74,10 +37,10 @@ function flyAstronaut(){
             stepY = moon.y/ routeY * $(window).scrollTop()
             stepX = foot/routeY * routeX;
             foot = stepY + initFoot;
-            console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
+            // console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
         } else {
             $('.potential-typing').addClass('typing');
-            console.log('koniec')
+            // console.log('koniec')
             return;
         }
         $('.astronaut').css('transform', 'translate('+stepX +'px,'+ stepY + 'px) rotate(' + angle + 'deg)');
@@ -85,7 +48,6 @@ function flyAstronaut(){
     }
     $(window).on('scroll', fly);
 }
-
 const canvas = $('<canvas></canvas>').addClass('canvas-stars');
 $('.home').append(canvas);
 const ctx = canvas[0].getContext("2d");
@@ -97,13 +59,7 @@ function createCanvas(){
         new Circle();       
     }
 }
-// function getBackgroundColor() {
-//     return 'rgb('+[
-//         Math.round(Math.random()*0xFF),
-//         Math.round(Math.random()*0xFF),
-//         Math.round(Math.random()*0xFF)
-//     ].join()+')';
-// }
+
 const stars=[];
 function shine(){
     for(let i=0; i<3;i++){
@@ -125,20 +81,11 @@ const Circle = function(){
     let h = window.innerHeight;
     let w = window.innerWidth;
     let rad = Math.floor(Math.random()*2)+2;
-    // let innerRad = Math.ceil((rad-1)/2);
     let x=Math.random()*(w-rad*2)+rad;
-    // let innerX = Math.ceil(x/2);
     let y=Math.random()*(h-rad*2)+rad;
-    // let innerY = Math.ceil(y/2);
-    // let radgrad = ctx.createRadialGradient(innerX, innerY, innerRad, x, y, rad);
-    // radgrad.addColorStop(0,'white');
-    // radgrad.addColorStop(0.8, 'snow');
-    // radgrad.addColorStop(1, 'azure');
-    // let colorC = getBackgroundColor();
     let colorC = "rgb(240,240,240)";
     ctx.beginPath();
     ctx.fillStyle=colorC;
-    // ctx.fillStyle = radgrad;
     ctx.globalAlpha = 0.9;
     stars.push([x,y,rad,colorC]);
     ctx.arc(x, y, rad, 0, 2 * Math.PI);
