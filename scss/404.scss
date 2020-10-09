@@ -1,0 +1,46 @@
+$primary: #364f6b;
+$secondary: #fc5185;
+$third: #43dde6;
+$fourth: #f0f0f0;
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 16px;
+    font-family: Coiny;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    text-align: center;
+    background: url("../img/404.svg"), radial-gradient(closest-side, $third, $fourth, $primary);
+    background-position: center;
+    background-repeat: no-repeat;
+    p{
+        font-size: 2rem;
+        color: $secondary;
+        text-transform: uppercase;
+    }
+    button{
+        padding: .5rem;
+        border-radius: 1rem;
+        border: none;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        background-color: $secondary;
+        cursor: pointer;
+        transition: background-color 1s ease;
+        &:hover{
+            background-color: $primary;
+        }
+        a{
+            text-decoration: none;
+            color: $fourth;
+
+        }
+    }
+}

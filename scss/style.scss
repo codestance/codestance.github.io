@@ -1,0 +1,160 @@
+@import 'settings';
+.z-index-2{
+  z-index: 2;
+}
+.home{
+  background: $primary;
+  height: 110vh;
+  min-height: 400px;
+  padding: 0;
+}
+.canvas-div{
+  width: 100%;
+  height: 110vh;
+  min-height: 400px;
+  top:0;
+  left:0;
+}
+.canvas-stars{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.orbit{
+  min-width: 100px;
+  max-width: 400px;
+  z-index: 999;
+  // mix-blend-mode: difference;
+  .orbit-text{
+    font-family: Coiny;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: -.1rem;
+    text-shadow: 0 0 .8rem white;
+  }
+}
+.planet{
+  z-index:1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title{
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding-left: 2em;
+  white-space: nowrap;
+  color: $secondary;
+}
+
+$astronautWidth: 62px;
+.astronaut{
+  top: 50%;
+  left: 50%;
+  z-index: 2000;
+  opacity: 0;
+}
+.wave-bottom{
+    bottom: -1px;
+    left: 0;
+}
+.wave-top{
+  top: -1px;
+  left: 0;
+}
+.self-ad{
+  color: $primary;
+  p:nth-child(2){
+    font-family: Coiny;
+    font-size: 1.5em;
+  }
+}
+.skills{
+  background: $primary;
+  svg{
+    &:first-child{
+      top: 15%;
+      left: 60%;
+    }
+    &:nth-child(2){
+      top: 60%;
+      left: 20%;
+    }
+  }
+  label{
+    position: relative;
+    z-index: 2;
+  }
+}
+.folio{
+  svg{
+    &:first-child{
+      top: 8%;
+      left: 60%;
+    }
+    &:nth-child(2){
+      top: 50%;
+      left: 40%;
+    }
+    &:nth-child(3){
+      top: 85%;
+      left: 23%;
+    }
+  }
+}
+picture{
+  width:50%;
+  height: auto;
+  margin:0 auto;
+}
+.contact{
+  background: $primary;
+  .potential{
+    display: inline-block;
+    .potential-typing{
+      color: white;
+      white-space: nowrap;
+      opacity: 0;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .typing{
+      &:nth-child(1){
+        animation: typing 2s steps(40, end);
+        animation-fill-mode: forwards;
+      }
+      &:nth-child(2){
+        animation: typing 2s steps(40, end);
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  form{
+    max-width: $small;
+    position: relative;
+    z-index: 2;
+  }
+}
+@keyframes typing{
+  from {width: 0; opacity: 0}
+  to {width: 100%; opacity: 1}
+}
+.btn-custom{
+  color: $fourth;
+  font-family: Coiny;
+  background-color: $secondary;
+  &:hover{
+    color: $primary;
+    background-color: $third;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+}
