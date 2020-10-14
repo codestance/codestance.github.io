@@ -73,40 +73,56 @@ $astronautWidth: 62px;
     font-family: Coiny;
     font-size: 1.5em;
   }
+  svg{
+    bottom: 0;
+    right: 10%; 
+  }
 }
 .skills{
   background: $primary;
-  svg{
-    &:first-child{
-      top: 15%;
-      left: 60%;
-    }
-    &:nth-child(2){
-      top: 60%;
-      left: 20%;
-    }
-  }
+  // svg{
+  //   &:first-child{
+  //     top: 10%;
+  //     right: 20%;
+  //     z-index: 2;
+  //   }
+    // &:nth-child(2){
+    //   top: 60%;
+    //   left: 20%;
+    // }
+  // }
   label{
     position: relative;
     z-index: 2;
   }
 }
-.folio{
-  svg{
-    &:first-child{
-      top: 8%;
-      left: 60%;
-    }
-    &:nth-child(2){
-      top: 50%;
-      left: 40%;
-    }
-    &:nth-child(3){
-      top: 85%;
-      left: 23%;
-    }
-  }
+.meteor-top{
+  top: -1.5em;
+  left: 15%;
+  z-index: 2;
 }
+.meteor-top2{
+  top: 10%;
+  right: 20%;
+  z-index: 2;
+}
+
+// .folio{
+//   svg{
+//     &:first-child{
+//       top: 8%;
+//       left: 60%;
+//     }
+//     &:nth-child(2){
+//       top: 50%;
+//       left: 40%;
+//     }
+//     &:nth-child(3){
+//       top: 85%;
+//       left: 23%;
+//     }
+//   }
+// }
 picture{
   width:50%;
   height: auto;
@@ -149,6 +165,8 @@ picture{
   color: $fourth;
   font-family: Coiny;
   background-color: $secondary;
+  position: relative;
+  z-index: 300;
   &:hover{
     color: $primary;
     background-color: $third;
