@@ -1,21 +1,21 @@
 {
-  "name": "me",
+  "name": "codestance.github.io",
   "version": "1.0.0",
-  "description": "me",
-  "main": "index.js",
+  "description": "portfolio",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marrow00/me.git"
+    "url": "git+https://github.com/codestance/codestance.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marrow00/me/issues"
+    "url": "https://github.com/codestance/codestance.github.io/issues"
   },
-  "homepage": "https://github.com/marrow00/me#readme",
+  "homepage": "https://github.com/codestance/codestance.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
