@@ -48,7 +48,7 @@ function flyAstronaut(){
     }
     $(window).on('scroll', fly);
 }
-const canvas = $('<canvas></canvas>').addClass('canvas-stars');
+const canvas = $('<canvas></canvas>').addClass('canvas-stars').attr('aria-hidden','true');
 $('.home').append(canvas);
 const ctx = canvas[0].getContext("2d");
 function createCanvas(){
