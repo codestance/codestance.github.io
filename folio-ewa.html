@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <style>html,body{margin:0;padding:0;}.color{height:5em;}.color:first-child{background:#9c301a;}.color:nth-child(2){background:#594e59;}button a{text-decoration:none;color: #fff;}</style>
+    <style>html,body{margin:0;padding:0;}.color{height:8em}@media (min-width:1000px){.color{height:5em}}.color:first-child{background:#9c301a;}.color:nth-child(2){background:#594e59;}.color p{margin:0}button a{text-decoration:none;color: #fff;}</style>
     <title>portfolio</title>
 </head>
 <body>
@@ -26,8 +26,11 @@
                     <li>technical university building in the background</li>
                     <li>links to all departments with the logo</li>
                 </ul>
-                <img class="img-fluid" src="img/folio/ewa/design.png" alt="desktop design">
-                <img class="img-fluid" src="img/folio/ewa/design2.png" alt="desktop design classes view">
+                <picture class="text-center">
+                    <source srcset="img/folio/ewa/design1000.webp" media="(min-width: 1024px)">
+                    <source srcset="img/folio/ewa/design700.webp" media="(min-width: 768px)">
+                    <img class="img-fluid" src="img/folio/ewa/design400.png" alt="desktop design">
+                </picture>
             </div>
             <h3 class="pt-3">Typography</h3>
             <div class="row">
@@ -38,12 +41,16 @@
             </div>
             <h3 class="pt-3">Color scheme</h3>
             <div class="row text-center">
-                <div class="col color"><p class="text-light">medium dark red</p></div>
-                <div class="col color"><p class="text-light">medium dark shade of magenta</p></div>
+                <div class="col d-flex justify-content-center align-items-center color"><p class="text-light">medium dark red</p></div>
+                <div class="col d-flex justify-content-center align-items-center color"><p class="text-light">medium dark shade of magenta</p></div>
             </div>
             <h3 class="pt-3">Mobile view</h3>
             <div class="row">
-                <img class="img-fluid" src="img/folio/ewa/mobile.png" alt="mobile mockup">
+                <picture class="text-center">
+                    <source srcset="img/folio/ewa/mobile1000.webp" media="(min-width: 1024px)">
+                    <source srcset="img/folio/ewa/mobile700.webp" media="(min-width: 768px)">
+                    <img class="img-fluid" src="img/folio/ewa/mobile400.png" alt="mobile mockup">
+                </picture>
             </div>
         </section>
         <section class="container pt-3">

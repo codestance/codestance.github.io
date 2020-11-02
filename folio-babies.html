@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <style>body,html{margin:0;padding:0}button a{text-decoration:none;color:#fff}</style>
     <title>portfolio</title>
 </head>
 <body>
@@ -26,11 +27,19 @@
                     <li>clear charts</li>
                     <li>really nothing fancy here</li>
                 </ul>
-                <img class="img-fluid" src="img/folio/babies/design.png" alt="desktop design">
+                <picture class="text-center">
+                    <source srcset="img/folio/babies/design1000.webp" media="(min-width: 1024px)">
+                    <source srcset="img/folio/babies/design700.webp" media="(min-width: 768px)">
+                    <img class="img-fluid" src="img/folio/babies/design400.png" alt="desktop design">
+                </picture>
             </div>
             <h3 class="pt-3">Mobile view</h3>
             <div class="row">
-                <img class="img-fluid" src="img/folio/babies/mobile.png" alt="mobile mockup">
+                <picture class="text-center">
+                    <source srcset="img/folio/babies/mobile1000.webp" media="(min-width: 1024px)">
+                    <source srcset="img/folio/babies/mobile700.webp" media="(min-width: 768px)">
+                    <img class="img-fluid" src="img/folio/babies/mobile400.png" alt="mobile mockup">
+                </picture>
             </div>
         </section>
         <section class="container pt-3">
@@ -46,7 +55,7 @@
                     <button type="button" class="btn btn-lg btn-info"><a href="https://codestance.github.io/babyNames/" target="_blank">It's alive!</a></button>
                 </div>
             </div>
-            <div>
+            <div class="pt-3">
                 <button type="button" class="btn btn-lg btn-success"><a href="https://codestance.github.io/#portfolio">See other projects</a></button>
             </div>
         </section>
