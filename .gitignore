@@ -4,3 +4,5 @@
 node_modules/
 \.vscode/
 icomoon-v1.0/
+css/folio.css
+scss/folio.scss
