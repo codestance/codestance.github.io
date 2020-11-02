@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lekton&family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <style>@import url(https://fonts.googleapis.com/css2?family=Lekton&family=Press+Start+2P&display=swap);html,body{margin:0;padding:0;}.headlines-font{font-family:'Press Start 2P',cursive;font-weight:700;}.content-font{font-family:'Lekton',sans-serif;font-weight:300;}.color{height:8em}@media (min-width:1000px){.color{height:5em}}.color:first-child{background-color:darkslategray}.color:nth-child(2){background-color:red}.color p{margin:0}button a{text-decoration:none;color: #fff;}</style>
     <title>portfolio</title>
-    <style>html,body{margin:0;padding:0;}.headlines-font{font-family:'Press Start 2P',cursive;font-weight:700;}.content-font{font-family:'Lekton',sans-serif;font-weight:300;}.color{height:5em} .color:first-child{background-color: darkslategray;}.color:nth-child(2){background-color:red;}button a{text-decoration:none;color: #fff;}</style>
 </head>
 <body>
     <main class="py-5">
@@ -35,7 +34,11 @@
         <section class="container pt-3">
             <h2>Design</h2>
             <div class="row">
-                <img class="img-fluid" src="img/folio/rpsls/design.png" alt="desktop design">
+                <picture class="text-center">
+                    <source srcset="img/folio/rpsls/design1000.webp" media="(min-width: 1024px)">
+                    <source srcset="img/folio/rpsls/design700.webp" media="(min-width: 768px)">
+                    <img class="img-fluid" src="img/folio/rpsls/design400.png" alt="desktop design">
+                </picture>
             </div>
             <h3 class="pt-3">Typography</h3>
             <div class="row">
@@ -47,12 +50,16 @@
             </div>
             <h3 class="pt-3">Color scheme</h3>
             <div class="row text-center">
-                <div class="col color"><p class="text-light">darkslategray</p></div>
-                <div class="col color"><p class="text-light">red</p></div>
+                <div class="col d-flex justify-content-center align-items-center color"><p class="text-light">darkslategray</p></div>
+                <div class="col d-flex justify-content-center align-items-center color"><p class="text-light">red</p></div>
             </div>
             <h3 class="pt-3">Mobile view</h3>
             <div class="row">
-                <img class="img-fluid" src="img/folio/rpsls/mobile.png" alt="mobile mockup">
+                <picture class="text-center">
+                    <source srcset="img/folio/rpsls/mobile1000.webp" media="(min-width: 1024px)">
+                    <source srcset="img/folio/rpsls/mobile700.webp" media="(min-width: 768px)">
+                    <img class="img-fluid" src="img/folio/rpsls/mobile400.png" alt="mobile mockup">
+                </picture>
             </div>
         </section>
         <section class="container pt-3">
