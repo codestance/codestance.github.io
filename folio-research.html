@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');body,html{margin:0;padding:0}.headlines-font{font-family:Lato,serif;font-weight:700;text-transform:uppercase;}.content-font{font-family:Lato,sans-serif;font-weight:300}.color{height:8em}@media (min-width:1000px){.color{height:5em}}.color:first-child{background-color:#D12CA8}.color:nth-child(2){background-color:#6BC0DE}.color:nth-child(3){background-color:#36156D}.color p{margin:0}button a{text-decoration:none;color:#fff}</style>
+    <title>portfolio</title>
+</head>
+<body>
+    <main class="py-5">
+        <h1 class="text-center">Scientific research page wiith animations</h1>
+        <section class="container pt-3">
+            <div class="row">
+                <h2>Design brief</h2>
+                <ul>
+                    <li>landing page inspired by <a href="https://www.freepik.com/free-vector/scientific-research-landing-page-template_7963905.htm#query=scientific%20research&position=22">freepik</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="container pt-3">
+            <h2>Design</h2>
+            <div class="row">
+                <picture class="text-center">
+                    <source srcset="img/folio/research/design1000.webp" media="(min-width: 1024px)">
+                    <source srcset="img/folio/research/design700.webp" media="(min-width: 768px)">
+                    <img class="img-fluid" src="img/folio/research/design400.png" alt="desktop design">
+                </picture>
+            </div>
+            <h3 class="pt-3">Typography</h3>
+            <div class="row">
+                <p>headlines - Lato, 700; content - Lato, 400</p>
+                <h4 class="headlines-font">Some interesting headline</h4>
+                <p class="content-font">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus modi consequatur cum officia animi mollitia possimus laboriosam corrupti eveniet. Ullam ea omnis saepe quisquam enim at illum maiores amet suscipit!
+                </p>
+            </div>
+            <h3 class="pt-3">Color scheme</h3>
+            <div class="row text-center">
+                <div class="col d-flex justify-content-center align-items-center color"><p class="text-light">shade of magenta</p></div>
+                <div class="col d-flex justify-content-center align-items-center color"><p>medium light shade of cyan</p></div>
+                <div class="col d-flex justify-content-center align-items-center color"><p class="text-light">medium dark shade of blue-magenta</p></div>
+            </div>
+            <h3 class="pt-3">Mobile view</h3>
+            <div class="row">
+                <picture class="text-center">
+                    <source srcset="img/folio/research/mobile1000.webp" media="(min-width: 1024px)">
+                    <source srcset="img/folio/research/mobile700.webp" media="(min-width: 768px)">
+                    <img class="img-fluid" src="img/folio/research/mobile400.png" alt="mobile mockup">
+                </picture>
+            </div>
+        </section>
+        <section class="container pt-3">
+            <h2>Technologies</h2>
+            <div class="row">
+                <ul>
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>vanilla JS</li>
+                    <li>anime.js</li>
+                </ul>
+                <div>
+                    <button type="button" class="btn btn-lg btn-primary"><a href="https://github.com/codestance/scientificResearch">See the code</a></button>
+                    <button type="button" class="btn btn-lg btn-info"><a href="https://codestance.github.io/scientificResearch/">It's alive!</a></button>
+                </div>
+            </div>
+            <div class="pt-3">
+                <button type="button" class="btn btn-lg btn-success"><a href="https://codestance.github.io/#portfolio">See other projects</a></button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
