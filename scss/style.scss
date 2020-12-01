@@ -29,7 +29,9 @@
   z-index: 999;
   // mix-blend-mode: difference;
   .orbit-text{
-    font-family: Coiny;
+    font-family: Coiny, sans-serif;
+    // font-family: Sen, sans-serif;
+    font-weight: 700;
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: -.1rem;
@@ -72,6 +74,8 @@ $astronautWidth: 62px;
   p:nth-child(2){
     font-family: Coiny;
     font-size: 1.5em;
+    line-height: 1;
+    padding-top: 1em;
   }
   svg{
     bottom: 0;
@@ -79,7 +83,7 @@ $astronautWidth: 62px;
   }
 }
 .skills{
-  background: $primary;
+  // background: $primary;
   // svg{
   //   &:first-child{
   //     top: 10%;
