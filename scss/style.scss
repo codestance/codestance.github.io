@@ -1,9 +1,17 @@
 @import 'settings';
-.z-index-2{
-  z-index: 2;
+// .z-index-2{
+//   z-index: 2;
+// }
+nav{
+  top:0;
+  z-index:2;
 }
 .home{
-  background: $primary;
+  // background: $primary;
+  // background: linear-gradient(to top right,#450b7c,#563cc9,#49e9fb);
+  // background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+  background: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
+  // background: linear-gradient(to right, rgb(35, 37, 38), rgb(65, 67, 69));
   height: 110vh;
   min-height: 400px;
   padding: 0;
@@ -44,7 +52,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+main{
+  background: url('../img/bg.svg') cover no-repeat;
+}
 .title{
   position: relative;
   z-index: 2;
@@ -133,7 +143,8 @@ picture{
   margin:0 auto;
 }
 .contact{
-  background: $primary;
+  // background: $primary;
+  background: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
   .potential{
     display: inline-block;
     .potential-typing{
@@ -173,7 +184,7 @@ picture{
   z-index: 300;
   &:hover{
     color: $primary;
-    background-color: $third;
+    // background-color: $third;
   }
   a{
     color: inherit;
