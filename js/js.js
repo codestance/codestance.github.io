@@ -26,7 +26,7 @@ let moon = {
 // console.log('document height', $(document).height())
 let routeX = Math.abs(moon.x - astronaut.x);
 let routeY = Math.abs(moon.y- astronaut.y);
-// console.log('astronaut: ', astronaut, 'moon: ', moon)
+console.log('astronaut: ', astronaut, 'moon: ', moon)
 function flyAstronaut(){
     const initFoot = astronaut.y + $('.astronaut').height();
     let angle = 0;
@@ -37,7 +37,7 @@ function flyAstronaut(){
             stepY = moon.y/ routeY * $(window).scrollTop()
             stepX = foot/routeY * routeX;
             foot = stepY + initFoot;
-            // console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
+            console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
         } else {
             $('.potential-typing').addClass('typing');
             // console.log('koniec')
@@ -83,7 +83,7 @@ const Circle = function(){
     let rad = Math.floor(Math.random()*2)+2;
     let x=Math.random()*(w-rad*2)+rad;
     let y=Math.random()*(h-rad*2)+rad;
-    let colorC = "rgb(240,240,240)";
+    let colorC = "rgb(255,255,255)";
     ctx.beginPath();
     ctx.fillStyle=colorC;
     ctx.globalAlpha = 0.9;

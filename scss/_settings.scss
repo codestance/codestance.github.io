@@ -9,7 +9,7 @@
 }
 html{
   font-size: 16px;
-  max-width: $max;
+  // max-width: $max;
   @media(min-width: $large){
     font-size: 18px;
   }
@@ -24,7 +24,7 @@ body{
 }
 section{
   position: relative;
-  padding: 1rem;
+  padding: 1em;
   background: white;
 }
 h1,h2{
@@ -37,10 +37,15 @@ p{
 }
 label{
   span{
-    // color: white;
     font-size: .75rem;
   }
 }
 input,textarea{
   width: 100%;
+}
+.justify-content-flex-end{
+  justify-content: flex-end;
+}
+.align-items-flex-end{
+  align-items: flex-end;
 }
