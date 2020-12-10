@@ -2,9 +2,14 @@
 // @import url('https://fonts.googleapis.com/css?family=Raleway:200i&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Open+Sans&display=swap');
+@font-face{
+  font-family: Sen;
+  src:  url('../fonts/sen_regular.woff') format('woff'),
+        url('../fonts/sen_regular.ttf') format('truetype');
+}
 html{
   font-size: 16px;
-  max-width: $max;
+  // max-width: $max;
   @media(min-width: $large){
     font-size: 18px;
   }
@@ -14,15 +19,17 @@ html,body{
   padding: 0;
 }
 body{
-  font-family: Open Sans, sans-serif;
+  // font-family: Open Sans, sans-serif;
+  font-family: Sen, sans-serif;
 }
 section{
   position: relative;
-  padding: 1rem;
-  background: $fourth;
+  padding: 1em;
+  background: white;
 }
 h1,h2{
-  font-family: Coiny;
+  font-family: Coiny, sans-serif;
+  // font-family: Sen, sans-serif;
   text-transform: uppercase;
 }
 p{
@@ -30,10 +37,15 @@ p{
 }
 label{
   span{
-    color: white;
     font-size: .75rem;
   }
 }
 input,textarea{
   width: 100%;
+}
+.justify-content-flex-end{
+  justify-content: flex-end;
+}
+.align-items-flex-end{
+  align-items: flex-end;
 }
