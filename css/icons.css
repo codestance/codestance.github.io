@@ -1,161 +1,168 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?x4d80y');
-  src:  url('../fonts/icomoon.eot?x4d80y#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?x4d80y') format('truetype'),
-    url('../fonts/icomoon.woff?x4d80y') format('woff'),
-    url('../fonts/icomoon.svg?x4d80y#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?vhmch7');
+  src:  url('../fonts/icomoon.eot?vhmch7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vhmch7') format('truetype'),
+    url('../fonts/icomoon.woff?vhmch7') format('woff'),
+    url('../fonts/icomoon.svg?vhmch7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  font-size: 2rem;
-  /* speak: none; */
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
+  font-size: 2em;
   text-transform: none;
   line-height: 1;
-  /* Enable Ligatures ================ */
-  letter-spacing: 0;
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga=1";
-  -moz-font-feature-settings: "liga";
-  -ms-font-feature-settings: "liga" 1;
-  font-feature-settings: "liga";
-  -webkit-font-variant-ligatures: discretionary-ligatures;
-  font-variant-ligatures: discretionary-ligatures;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media(min-width: 768px){
-  [class^="icon-"], [class*="icon-"]{
-    font-size: 2.5rem;
-  }
-}
-@media(min-width: 1000px){
-  [class^="icon-"], [class*="icon-"]{
-    font-size: 3rem;
-  }
-}
-.icon-cogs:before {
-  content: "\f085";
-  color: silver;
-}
-.icon-gears:before {
-  content: "\f085";
-}
-.icon-paint-brush:before {
-  content: "\f1fc";
-  color: salmon;
-}
-.icon-search:before {
+
+.icon-cake:before {
   content: "\e901";
-  color: lightseagreen;
+  color: #FAB858;
+}
+.icon-cup-cake:before {
+  content: "\e901";
+}
+.icon-ask:before {
+  content: "\e902";
 }
 .icon-question:before {
   content: "\e902";
-  color: springgreen;
+  color: red;
 }
-.icon-lightbulb-o:before {
+.icon-doubt:before {
+  content: "\e902";
+}
+.icon-smile:before {
   content: "\e903";
-  color: #e2e200;
+  color: yellow;
 }
-.icon-tree:before {
+.icon-emoticon:before {
+  content: "\e903";
+}
+.icon-smiley:before {
+  content: "\e903";
+}
+.icon-face:before {
+  content: "\e903";
+}
+.icon-stats-dots:before {
   content: "\e904";
-  color: green;
+  color:#765EB4;
 }
-.icon-color_lens:before {
-  content: "\e900";
+.icon-stats:before {
+  content: "\e904";
 }
-.icon-palette:before {
-  content: "\e900";
-  color: lightskyblue;
+.icon-plot:before {
+  content: "\e904";
+}
+.icon-statistics:before {
+  content: "\e904";
+}
+.icon-chart:before {
+  content: "\e904";
+  color: #765EB4;
 }
 .icon-adobexd:before {
   content: "\e905";
   color: #ff2bc2;
 }
-.icon-bootstrap:before {
+.icon-npm:before {
+  content: "\e906";
+  color: #cb3837;
+}
+.icon-webpack:before {
   content: "\e907";
-  color: #7961a8;
+  color: #8dd6f9;
 }
-.icon-css3:before {
+.icon-react:before {
   content: "\e908";
-  color: #1572b6;
+  color: #61dafb;
 }
-.icon-gimp:before {
+.icon-vue-dot-js:before {
   content: "\e909";
-  color: #848484;
+  color: #4fc08d;
 }
 .icon-github:before {
   content: "\e90a";
 }
-.icon-gulp:before {
+.icon-gimp:before {
   content: "\e90b";
-  color: #da4648;
-}
-.icon-html5:before {
-  content: "\e90c";
-  color: #e34f26;
-}
-.icon-javascript:before {
-  content: "\e90d";
-  color: #f7df1e;
-}
-.icon-jquery:before {
-  content: "\e906";
-  color: #0769ad;
-}
-.icon-npm:before {
-  content: "\e914";
-  color: #cb3837;
-}
-.icon-react:before {
-  content: "\e90e";
-  color: #61dafb;
-}
-.icon-sass:before {
-  content: "\e90f";
-  color: #c69;
-}
-.icon-ubuntu:before {
-  content: "\e910";
-  color: #e95420;
+  color: #5c5543;
 }
 .icon-visualstudiocode:before {
-  content: "\e918";
+  content: "\e90c";
   color: #007acc;
 }
-.icon-vue-dot-js:before {
+.icon-gulp:before {
+  content: "\e90d";
+  color: #da4648;
+}
+.icon-wordpress:before {
+  content: "\e90e";
+  color: #21759b;
+}
+.icon-jquery:before {
+  content: "\e90f";
+  color: #0769ad;
+}
+.icon-javascript:before {
+  content: "\e910";
+  color: #f7df1e;
+}
+.icon-bootstrap:before {
   content: "\e911";
-  color: #4fc08d;
+  color: #563d7c;
 }
-.icon-webpack:before {
+.icon-sass:before {
   content: "\e912";
-  color: #8dd6f9;
+  color: #c69;
 }
-.icon-windows:before {
+.icon-css3:before {
   content: "\e913";
-  color: #0078d6;
+  color: #1572b6;
 }
-.icon-database:before {
-  content: "\e964";
+.icon-html5:before {
+  content: "\e914";
+  color: #e34f26;
+}
+.icon-wordpress1:before {
+  content: "\e900";
+  color: #21759b;
+}
+.icon-lightbulb:before {
+  content: "\e915";
+  color: #e2e200;
+}
+.icon-color_lens:before {
+  content: "\e916";
   color: lightskyblue;
 }
-.icon-stats-dots:before {
-  content: "\e99b";
-  color: orange;
+.icon-cogs:before {
+  content: "\e917";
 }
-.icon-cookie:before {
-  content: "\e9a3";
-  color: #F8B154;
+.icon-gears:before {
+  content: "\e917";
 }
-.icon-smile2:before {
-  content: "\e9e2";
-  color: #ffc517;
+.icon-paint-brush:before {
+  content: "\e918";
+  color: salmon;
+}
+.icon-database:before {
+  content: "\e919";
+  color: #EEA61C;
+}
+.icon-search:before {
+  content: "\e91a";
+  color: lightseagreen;
 }
