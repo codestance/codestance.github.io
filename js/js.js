@@ -12,12 +12,8 @@ $(function () {
     });
   });
 
-let planet = {
-    y: $('.planet').offset().top,
-    x: $('.planet').offset().left + $('.planet').width()/2
-}
 function setAstronaut(planet){
-    $('.astronaut').css('top', planet.y + 'px');
+    $('.astronaut').css('top', planet.y - $('.home').css('padding-bottom') + 'px');
     $('.astronaut').css('left', planet.x -  $('.astronaut').width()/2 +'px');
     $('.astronaut').css('opacity', 1);
     return {
@@ -25,16 +21,12 @@ function setAstronaut(planet){
         x: $('.astronaut').offset().left
     }
 }
-// let astronaut = setAstronaut(planet)
-// let moon = {
-//     y: $('.moon').offset().top + $('.moon').height()/2,
-//     x: $('.moon').offset().left + $('.moon').width()/2 -  $('.astronaut').width()/2
-// }
-// console.log('document height', $(document).height())
-// let routeX = Math.abs(moon.x - astronaut.x);
-// let routeY = Math.abs(moon.y- astronaut.y);
 
 function flyAstronaut(){
+    let planet = {
+        y: $('.planet').offset().top,
+        x: $('.planet').offset().left + $('.planet').width()/2
+    }
     let astronaut = setAstronaut(planet);
     let moon = {
         y: $('.moon').offset().top + $('.moon').height()/2,
@@ -56,12 +48,9 @@ function flyAstronaut(){
         } else {
             angle=360;
             $('.potential-typing').addClass('typing');
-            // console.log('koniec')
-            return;
         }
         $('.astronaut').css('transform', 'translate('+stepX +'px,'+ stepY + 'px) rotate(' + angle + 'deg)');
         angle = (foot / routeY *360) % 360;
-        // console.log('policzony:', angle);
     }
     $(window).on('scroll', fly);
 }
@@ -76,7 +65,6 @@ function createCanvas(){
         new Circle();       
     }
 }
-
 const stars=[];
 function shine(){
     for(let i=0; i<3;i++){
