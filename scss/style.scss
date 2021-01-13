@@ -1,7 +1,7 @@
 @import 'settings';
 .navigation{
   top:0;
-  z-index:5;
+  z-index:30;
   font-weight:bold;
   background: linear-gradient(to bottom, rgba(48, 43, 99, .5), transparent);
   .navbar-brand{
@@ -50,7 +50,7 @@
 .orbit{
   min-width: 100px;
   max-width: 400px;
-  z-index: 999;
+  z-index: 9;
   .orbit-text{
     font-family: Coiny, sans-serif;
     font-weight: 700;
@@ -61,7 +61,7 @@
   }
 }
 .planet{
-  z-index:1000;
+  z-index:10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -81,15 +81,15 @@ $astronautWidth: 62px;
 .astronaut{
   top: calc(50% - 3em);
   left: 50%;
-  z-index: 2000;
+  z-index: 20;
   opacity: 0;
 }
 .wave-bottom{
-    bottom: -1px;
-    left: 0;
+  bottom: -2px;
+  left: 0;
 }
 .wave-top{
-  top: -1px;
+  top: -2px;
   left: 0;
 }
 .self-ad{
@@ -130,9 +130,10 @@ picture{
 .contact{
   background: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
   .moon{
-    width: 11em;
+    width: 18ch;
   }
   .potential{
+    margin-left: -1ch;
     .potential-typing{
       color: white;
       white-space: nowrap;
