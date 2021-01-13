@@ -1,18 +1,12 @@
-$(document).ready(function(){
+$(function(){
     createCanvas();
     flyAstronaut();
     setInterval(shine,1000);
     $(window).on('resize', createCanvas);
-    $(window).on('resize', flyAstronaut)
-});
-
-$(function () {
+    $(window).on('resize', flyAstronaut);
     $(document).scroll(function () {
-      $('.navigation').toggleClass('scrolled', $(this).scrollTop() > $(window).height()-150);
+        $('.navigation').toggleClass('scrolled', $(this).scrollTop() > $(window).height()-150);
     });
-});
-
-$(function (){
     $('.nav-link').on('click', function(){
         $('.navbar-collapse').removeClass('show');
     })
