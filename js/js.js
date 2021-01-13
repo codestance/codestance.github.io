@@ -5,12 +5,15 @@ $(document).ready(function(){
     $(window).on('resize', createCanvas);
     $(window).on('resize', flyAstronaut)
 });
-let planet = {
-    y: $('.planet').offset().top,
-    x: $('.planet').offset().left + $('.planet').width()/2
-}
+
+$(function () {
+    $(document).scroll(function () {
+      $('.navigation').toggleClass('scrolled', $(this).scrollTop() > $(window).height()-150);
+    });
+  });
+
 function setAstronaut(planet){
-    $('.astronaut').css('top', planet.y + 'px');
+    $('.astronaut').css('top', planet.y - $('.home').css('padding-bottom') + 'px');
     $('.astronaut').css('left', planet.x -  $('.astronaut').width()/2 +'px');
     $('.astronaut').css('opacity', 1);
     return {
@@ -18,16 +21,20 @@ function setAstronaut(planet){
         x: $('.astronaut').offset().left
     }
 }
-let astronaut = setAstronaut(planet)
-let moon = {
-    y: $('.moon').offset().top + $('.moon').height()/2,
-    x: $('.moon').offset().left + $('.moon').width()/2 -  $('.astronaut').width()/2
-}
-// console.log('document height', $(document).height())
-let routeX = Math.abs(moon.x - astronaut.x);
-let routeY = Math.abs(moon.y- astronaut.y);
-console.log('astronaut: ', astronaut, 'moon: ', moon)
+
 function flyAstronaut(){
+    let planet = {
+        y: $('.planet').offset().top,
+        x: $('.planet').offset().left + $('.planet').width()/2
+    }
+    let astronaut = setAstronaut(planet);
+    let moon = {
+        y: $('.moon').offset().top + $('.moon').height()/2,
+        x: $('.moon').offset().left + $('.moon').width()/2 -  $('.astronaut').width()/2
+    }
+    // console.log('astronaut: ', astronaut, 'moon: ', moon)
+    let routeX = Math.abs(moon.x - astronaut.x);
+    let routeY = Math.abs(moon.y- astronaut.y);
     const initFoot = astronaut.y + $('.astronaut').height();
     let angle = 0;
     let foot = initFoot;
@@ -37,11 +44,10 @@ function flyAstronaut(){
             stepY = moon.y/ routeY * $(window).scrollTop()
             stepX = foot/routeY * routeX;
             foot = stepY + initFoot;
-            console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
+            // console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
         } else {
+            angle=360;
             $('.potential-typing').addClass('typing');
-            // console.log('koniec')
-            return;
         }
         $('.astronaut').css('transform', 'translate('+stepX +'px,'+ stepY + 'px) rotate(' + angle + 'deg)');
         angle = (foot / routeY *360) % 360;
@@ -59,7 +65,6 @@ function createCanvas(){
         new Circle();       
     }
 }
-
 const stars=[];
 function shine(){
     for(let i=0; i<3;i++){
