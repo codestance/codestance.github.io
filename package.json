@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/codestance/codestance.github.io#readme",
   "devDependencies": {
+    "axios": "^0.21.1",
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
