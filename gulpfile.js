@@ -14,13 +14,14 @@ gulp.task('style',function(){
       .pipe(browserSync.stream());
 });
 gulp.task('js',function(){
-    return gulp.src('js/*.js')
-      .pipe(jsmin(({
+    return gulp.src('js/js.js')
+      .pipe(jsmin({
         ext: {
             min: '.min.js'
         },
+        noSource: true,
         ignoreFiles: ['*.min.js','icons.js']
-      })))
+      }))
       .pipe(gulp.dest('js'));
 });
 gulp.task('serve',gulp.parallel('style',function(){
@@ -28,7 +29,7 @@ gulp.task('serve',gulp.parallel('style',function(){
         server: "."
     });
     gulp.watch('scss/*.scss', gulp.task('style')).on('change', browserSync.reload);
-    gulp.watch('js/*.js', gulp.task('js')).on('change', browserSync.reload);
+    gulp.watch('js/js.js', gulp.task('js')).on('change', browserSync.reload);
     gulp.watch('*.html').on('change', browserSync.reload);
 }));
 
