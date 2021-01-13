@@ -10,7 +10,13 @@ $(function () {
     $(document).scroll(function () {
       $('.navigation').toggleClass('scrolled', $(this).scrollTop() > $(window).height()-150);
     });
-  });
+});
+
+$(function (){
+    $('.nav-link').on('click', function(){
+        $('.navbar-collapse').removeClass('show');
+    })
+});
 
 function setAstronaut(planet){
     $('.astronaut').css('top', planet.y - $('.home').css('padding-bottom') + 'px');
@@ -38,17 +44,21 @@ function flyAstronaut(){
     const initFoot = astronaut.y + $('.astronaut').height();
     let angle = 0;
     let foot = initFoot;
+    let stepX;
     let stepY;
     function fly(){
         if (moon.y > foot){
             stepY = moon.y/ routeY * $(window).scrollTop()
             stepX = foot/routeY * routeX;
             foot = stepY + initFoot;
-            // console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
         } else {
             angle=360;
             $('.potential-typing').addClass('typing');
         }
+        if (moon.x < astronaut.x){
+            stepX = -stepX;
+        }
+        // console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
         $('.astronaut').css('transform', 'translate('+stepX +'px,'+ stepY + 'px) rotate(' + angle + 'deg)');
         angle = (foot / routeY *360) % 360;
     }
