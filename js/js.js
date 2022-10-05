@@ -1,15 +1,22 @@
 $(function(){
     createCanvas();
-    flyAstronaut();
+    // flyAstronaut();
     setInterval(shine,1000);
     $(window).on('resize', createCanvas);
-    $(window).on('resize', flyAstronaut);
+    // $(window).on('resize', flyAstronaut);
     $(document).scroll(function () {
         $('.navigation').toggleClass('scrolled', $(this).scrollTop() > $(window).height()-150);
     });
     $('.nav-link').on('click', function(){
         $('.navbar-collapse').removeClass('show');
     })
+});
+
+Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+   flyAstronaut();
+   $(window).on('resize', flyAstronaut);
+//    $(window).on('scroll', flyAstronaut);
+
 });
 
 function setAstronaut(planet){
@@ -23,36 +30,47 @@ function setAstronaut(planet){
 }
 
 function flyAstronaut(){
-    let planet = {
+    const planet = {
         y: $('.planet').offset().top,
         x: $('.planet').offset().left + $('.planet').width()/2
     }
     let astronaut = setAstronaut(planet);
-    let moon = {
+    const moon = {
         y: $('.moon').offset().top + $('.moon').height()/2,
         x: $('.moon').offset().left + $('.moon').width()/2 -  $('.astronaut').width()/2
     }
-    // console.log('astronaut: ', astronaut, 'moon: ', moon)
+    console.log('astronaut: ', astronaut, 'moon: ', moon)
     let routeX = Math.abs(moon.x - astronaut.x);
     let routeY = Math.abs(moon.y- astronaut.y);
+    console.log('routeX: ', routeX, 'routeY: ', routeY)
     const initFoot = astronaut.y + $('.astronaut').height();
     let angle = 0;
     let foot = initFoot;
     let stepX;
     let stepY;
+    // let onMoon = false;
     function fly(){
-        if (moon.y > foot){
-            stepY = moon.y/ routeY * $(window).scrollTop()
-            stepX = foot/routeY * routeX;
-            foot = stepY + initFoot;
-        } else {
-            angle=360;
-            $('.potential-typing').addClass('typing');
-        }
-        if (moon.x < astronaut.x){
-            stepX = -stepX;
-        }
-        // console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
+        // if(!onMoon){
+            if (moon.y > foot){
+                stepY = moon.y/ routeY * $(window).scrollTop()
+                stepX = foot/routeY * routeX;
+                foot = stepY + initFoot;
+                if (moon.x < astronaut.x){
+                    stepX = -stepX;
+                }
+                console.log('stepX: ', stepX)
+            } else {
+                angle=360;
+                $('.potential-typing').addClass('typing');
+                // onMoon = true;
+                // astronaut.x = moon.x;
+            }
+        // } 
+        // else {
+        //     stepX = Math.abs(moon.x - astronaut.x);
+        //     stepY = Math.abs(moon.y- astronaut.y) - $('.astronaut').height();
+        // }
+        console.log('stepY: ', stepY, 'stepX: ', stepX, 'foot: ', foot);
         $('.astronaut').css('transform', 'translate('+stepX +'px,'+ stepY + 'px) rotate(' + angle + 'deg)');
         angle = (foot / routeY *360) % 360;
     }
